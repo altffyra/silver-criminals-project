@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "build-sass": "sass src/style/:dist/"
+    "build-sass": "sass src/style/:dist/styles/"
   },
   "dependencies": {
     "react": "^18.2.0",
