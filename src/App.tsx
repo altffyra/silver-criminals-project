@@ -52,6 +52,10 @@ async function GETDATA(Gender:string, PetType:string, SizeMin:string, SizeMax:st
   const data = await response.json()
 }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 
   return (
