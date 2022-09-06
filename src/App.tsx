@@ -11,7 +11,7 @@ import {animals} from './context.json'
 
 function App() {
 
-console.log(animals)
+
 
 
   return (
