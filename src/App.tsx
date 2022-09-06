@@ -12,19 +12,16 @@ import {Animalinterface} from '../modules/interfaces'
 function App() {
 
 
-
-  
-  const [animalsState, setAnimal] = useState([animals])
+  const [animalsState , setAnimal] = useState<Animalinterface[]>(animals)
 
   console.log(animalsState)
 
-  function timeToUpdate(animal:Animalinterface){ 
-    // const ids = animalsState.indexOf(animal)
-    // const tempArray = [...animalsState];
-    // tempArray.splice(ids,1)
-    // tempArray.unshift(animal)
-    // setAnimal(tempArray)
+/// inladdning
 
+  function timeToUpdate(filterArguments:Animalinterface){ 
+  //   const tempArray = [...animalsState];
+  //   // tempArray.filter(filterArguments)
+  //   setAnimal(tempArray)
   }
 
   const animalsMap = animals.map((animal, index) => {
@@ -33,21 +30,12 @@ function App() {
 
   return (
     <div className="App">
-
-      
       <Header />
-
       <Hero />
-
       <Filter info = {animalsState} update = {timeToUpdate}/>
-
       {animalsMap}
-
       <CallToAction />
-
       <Footer />
-
-
     </div>
   )
 }
