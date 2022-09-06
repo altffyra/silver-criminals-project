@@ -1,23 +1,29 @@
 import React from 'react'
-type Props = {}
+import {Animalinterface} from '../modules/interfaces'
+
+interface Props { 
+  info:Animalinterface
+  update: any
+  index: number
+  }
 
 const Animals = (props: Props) => {
 
-  const animalName: string = "placeholder1"
-  const animalGender: string = "placeholder1"
-  const animalSize: string = "placeholder1"
-  const animalType: string = "placeholder1"
-  const animalRace: string = "placeholder1"
-  const animalAge: string = "placeholder1"
-  const animalLocation: string = "placeholder1"
-  const animalGoodWith: string = "placeholder1"
-  const animalEnergy: string = "placeholder1"
-  const animalPicture: string = "placeholder1"
+  const animalName: string = props.info.name
+  const animalGender: string = ""
+  const animalSize: string = props.info.size
+  const animalType: string = props.info.type
+  const animalRace: string = props.info.race
+  const animalAge: string = props.info.age
+  const animalLocation: string = props.info.location
+  const animalGoodWith: any = props.info.WellWith
+  const animalEnergy: string = props.info.Energy
+  const animalPicture: string = props.info.picture
 
   return (
     <div className='animalCard'>
       <div className='pictureFrame'>
-        <div className='pictureArea'>{animalPicture}</div>
+      <img className='imageMedium' src={animalPicture}></img>
       </div>
       <h1 className='animalName'>{animalName}</h1>
       <div className='animalSpecs'>
@@ -27,7 +33,7 @@ const Animals = (props: Props) => {
         <p>Race: {animalRace}</p>
         <p>Age: {animalAge}</p>
         <p>Location: {animalLocation}</p>
-        <p>Good with: {animalGoodWith}</p>
+        <p>Good with: {animalGoodWith} </p>
         <p>Energy-Level: {animalEnergy}</p>
       </div>
 
