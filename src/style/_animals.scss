@@ -1,3 +1,17 @@
-.imageMedium {
-    
+
+.animalCard {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #F680C7;
+
+    .pictureFrame {
+        
+
+        .imageMedium {
+    max-width: 20em;
+        }
+    }
 }
+
