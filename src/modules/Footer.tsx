@@ -11,7 +11,7 @@ const Footer = (props: Props) => {
       <div className='logo'>
 
         <div className='logo__img'>
-          <img className='img'src="https://www.silhouette.pics/images/quotes/english/general/rabbit-paw-print-silhouette-free-52650-101458.jpg" alt="" />
+          <img className='img'src="../src/assets/logo.png" alt="" />
         </div>
 
         <div className='logo__text'>
