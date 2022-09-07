@@ -9,6 +9,8 @@ import CallToAction from './modules/CallToAction';
 import Footer from './modules/Footer';
 import {animals} from './context.json'
 import {Animalinterface} from './modules/interfaces'
+import LargeInfo from './modules/LargeInfo';
+
 function App() {
 
 
@@ -34,9 +36,12 @@ function App() {
       <Header />
       <Hero />
       <Filter info = {animalsState} update = {timeToUpdate}/>
-      {animalsMap}
+      <article className='animalGrid'>
+        {animalsMap}
+      </article>
       <CallToAction />
       <Footer />
+      <LargeInfo info= {animalsState[0]} />
     </div>
   )
 }
