@@ -11,8 +11,9 @@
 
 .footer__flex{
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: space-around;
+    margin-bottom: 16px;
+    padding-top: 18px;
   }
 
 .logo__item__1, .logo__item__2, .social__item {margin: 0px;}
@@ -20,7 +21,7 @@
 .logo__item__2 { margin-left: 20px;}
 .logo__item {font-size: 34px;}
 .optn__item { margin-bottom: 18px;}
-.img{border-radius: 2000px; width: 82px; height: 78px; margin-right: 18px;}
+.img{border-radius: 300px; width: 82px; height: 78px; margin-right: 18px;}
 
 .logo{
     display: flex;
