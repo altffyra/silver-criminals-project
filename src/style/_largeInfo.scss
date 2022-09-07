@@ -1,0 +1,16 @@
+.animalInfoWrapper {
+    position: relative;
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+ 
+    
+    z-index: 100;
+    top:0;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.hidden {
+    display:none
+}
