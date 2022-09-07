@@ -3,18 +3,28 @@
     display: flex;
     flex-direction: column;
     width: 25em;
-
     border-right: 2px solid #F680C7;
     border-left: 2px solid #F680C7;
     border-bottom: 2px solid #F680C7;
     border-radius: 20px;
     align-items: center;
 
-    .imageMedium {
+    .frame {
         width: 25em;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+
+
+
+        .imageMedium {
+            width: 25em;
+            height: 27em;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+        }
     }
+
+
 
 }
 
