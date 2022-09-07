@@ -12,6 +12,10 @@ const Animals = (props: Props) => {
   ///FIXA gender
   const animalGender: string = ""
 
+  function showAnimal(){
+
+    
+  }
 
   return (
     <div className='animalCard'>
@@ -29,7 +33,7 @@ const Animals = (props: Props) => {
         <p>Good with: {props.info.WellWith} </p>
         <p>Energy-Level: {props.info.Energy}</p>
       </div>
-
+    <button className='readMore-button' onClick={showAnimal}> Läs mer! </button>
     </div>
   )
 }
