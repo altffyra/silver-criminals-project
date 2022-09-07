@@ -1,25 +1,28 @@
-// @use "footer"
 
-.placeholder {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-width:50vw;
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "header";
+@import "hero";
 
-}
+@import "animals";
+@import "action";
+@import "footer";
+
+
 
 * {
     box-sizing: border-box;
-    outline: 1px solid rgb(52, 17, 190);
-    color: blue;
+    margin: 0;
+
   }
 
   body {
-    
-    background-color: red;
+    height: 100vh;
+    width: 99vw;
   }
 
-  .randomObject{
-    @extend .placeholder;
-  }
+
+
+
 
 
   

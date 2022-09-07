@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;800&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+.footer{
+    width: 100%;
+    height: 313px;
+    background: #F680C7; 
+}
+
+.footer__flex{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+    padding-top: 18px;
+  }
+
+.logo__item__1, .logo__item__2, .social__item {margin: 0px;}
+.logo__item__1, .logo__item__2, .optn__item, .social__item { color: #000000;}
+.logo__item__2 { margin-left: 20px;}
+.logo__item {font-size: 34px;}
+.optn__item { margin-bottom: 18px;}
+.img{border-radius: 300px; width: 82px; height: 78px; margin-right: 18px;}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.optn{
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 20px;
+    width: 188px;
+}
+
+.social__img{
+    width: 45px;
+    height: 45px;
+    margin: 6px;
+}
+.copyright{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 160px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #000000;
+}
