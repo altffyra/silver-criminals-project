@@ -16,7 +16,7 @@ const Filter = (props: Props) => {
   }
 
   return (
-    <div> 
+    <div className='filterWrapper'> 
       <h2>Sök efter:</h2>
       <p>Plats</p> <input type="text" onChange={changeForm}></input>
       <div className='searchForms' onChange={changeForm}>
@@ -53,10 +53,11 @@ const Filter = (props: Props) => {
       <option value="goodWithDogsAny">Ingen Preferens</option>
       <option value="goodWithDogs">Bra</option>
       </select>
-      <button></button>
-      
 
+    
       </div>
+      <button className='filter-button-cancel'>Nollställ</button>
+      <button className='filter-button'>Sök!</button>
     </div>
   )
 }
