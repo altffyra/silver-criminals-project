@@ -6,22 +6,22 @@
 }
 
 .action__card{
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 width: 90%;
 height: 480px;
-margin-left: 20px;
-margin-right: 20px;
-margin: 10px;
+margin-top:30px; margin-bottom:30px;
 background: #FFFFFF;
+padding-left: 100px;
 }
 
 
 .action__text{
-width: 788px;
+width: 970px;
 height: 210px;
 font-weight: 900;
-font-size: 66px;
+font-size: 84px;
+margin-bottom: 20px;
 color: #000000;
 }
 
@@ -51,6 +51,9 @@ color: #000000;
 }
 
 .action__btn{
+display: flex;
+justify-content: space-around;
+align-items: center;
 width: 216px;
 height: 65px;
 font-style: normal;
@@ -60,5 +63,10 @@ line-height: 22px;
 text-align: center;
 color: #FFFFFF;
 @include buttons
+}
+
+.action__btn__logo{
+    border-radius: 300px;
+    width: 30px;
 }
 

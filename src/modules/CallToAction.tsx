@@ -12,7 +12,7 @@ const CallToAction = (props: Props) => {
 
         <div className='action__inner__card'>
         <h3 className='action__formula'> Fyll i formuläret för att lägga upp för adoption</h3>
-        <button className='action__btn'>Till formuläret</button>
+        <button className='action__btn'>Till formuläret <img className='action__btn__logo' src="../src/assets/logo.png" alt="" /></button>
         </div>
         
       </div>
