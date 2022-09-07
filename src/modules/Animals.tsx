@@ -9,32 +9,25 @@ interface Props {
 
 const Animals = (props: Props) => {
 
-  const animalName: string = props.info.name
+  ///FIXA gender
   const animalGender: string = ""
-  const animalSize: string = props.info.size
-  const animalType: string = props.info.type
-  const animalRace: string = props.info.race
-  const animalAge: string = props.info.age
-  const animalLocation: string = props.info.location
-  const animalGoodWith: any = props.info.WellWith
-  const animalEnergy: string = props.info.Energy
-  const animalPicture: string = props.info.picture
+
 
   return (
     <div className='animalCard'>
       <div className='pictureFrame'>
-      <img className='imageMedium' src={animalPicture}></img>
+      <img className='imageMedium' src={props.info.picture}></img>
       </div>
-      <h1 className='animalName'>{animalName}</h1>
+      <h1 className='animalName'>{props.info.name}</h1>
       <div className='animalSpecs'>
         <p>Gender: {animalGender}</p>
-        <p>Size: {animalSize}</p>
-        <p>Type: {animalType}</p>
-        <p>Race: {animalRace}</p>
-        <p>Age: {animalAge}</p>
-        <p>Location: {animalLocation}</p>
-        <p>Good with: {animalGoodWith} </p>
-        <p>Energy-Level: {animalEnergy}</p>
+        <p>Size: {props.info.size}</p>
+        <p>Type: {props.info.type}</p>
+        <p>Race: {props.info.race}</p>
+        <p>Age: {props.info.age}</p>
+        <p>Location: {props.info.location}</p>
+        <p>Good with: {props.info.WellWith} </p>
+        <p>Energy-Level: {props.info.Energy}</p>
       </div>
 
     </div>
