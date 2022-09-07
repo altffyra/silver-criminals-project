@@ -36,7 +36,9 @@ function App() {
       <Header />
       <Hero />
       <Filter info = {animalsState} update = {timeToUpdate}/>
-      {animalsMap}
+      <article className='animalGrid'>
+        {animalsMap}
+      </article>
       <CallToAction />
       <Footer />
       <LargeInfo info= {animalsState[0]} />
