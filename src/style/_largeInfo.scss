@@ -2,7 +2,7 @@
 
 
 .blurr-div {
-   
+    // display: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,6 @@
         // width: 50vw;
         height: 90vh;
          z-index: 100;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         text-align: center;

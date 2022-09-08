@@ -5,16 +5,12 @@ interface Props {
   info:Animalinterface
   update: any
   index: number
+  showOverlay:any
   }
 
 const Animals = (props: Props) => {
 
-  ///FIXA gender
-
-  function showAnimal(){
-
-    
-  }
+  ///FIXA progress bar
 
   return (
 
@@ -38,7 +34,7 @@ const Animals = (props: Props) => {
 
         <div className='separator'></div>
 
-        <button className='readMore-button' onClick={showAnimal}> Läs mer! </button>
+        <button className='readMore-button' onClick={props.showOverlay}> Läs mer! </button>
       </section>
 
   )
