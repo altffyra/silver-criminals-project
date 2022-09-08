@@ -1,6 +1,14 @@
 
-.blurr-div {
-    visibility: hidden;
+.info__card {
+    position: absolute;
+    width: 700px;
+    height: 1100px;
+     z-index: 100;
+    top:50%;
+    overflow: hidden;
+}
+
+.info__card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,4 +110,8 @@
         color: #000000;
         margin-right: 40px;
     }
+}
+
+.hidden {
+    visibility: hidden;
 }

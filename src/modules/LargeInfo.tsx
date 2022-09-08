@@ -33,7 +33,10 @@ const LargeInfo = (props: Props) => {
         <p className='info__card__about'>Lorem ipsum dolor sit amet. Ex blanditiis voluptatem et maxime reprehenderit ea molestiae culpa quo velit voluptates ea possimus aspernatur! Sed expedita quia quo itaque saepe sit dolore similique aut illo atque est ducimus impedit. Et rerum dolorum internos molestias et quae doloribus non voluptas inventore aut aspernatur explicabo.
           Sed illum velit qui fuga fugit non facilis tempore in natus aliquid. Aut molestias molestiae a veritatis consequatur ab nostrum omnis et repellat doloremque sit Quis eaque qui dolorum necessitatibus sit ullam amet.
         </p>
+        <button> Till intresseanmälan </button>
       </article> 
+
+
 
   </div>
   </div>
