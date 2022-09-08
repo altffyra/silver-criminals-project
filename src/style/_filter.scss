@@ -35,10 +35,11 @@
     max-height: 5em;
     @include buttons
     }
-    // .searchForms{
-
+    .searchForms{
+display: flex;
+flex-direction: column;
     
-    // }
+    }
 .filter-button-cancel{
     display: flex;
     align-items: center;
