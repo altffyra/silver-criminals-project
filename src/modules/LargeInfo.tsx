@@ -20,7 +20,7 @@ const LargeInfo = (props: Props) => {
         <p className='animalInfoP'>Storlek: {props.info.size}</p>
         <p className='animalInfoP'>Plats: {props.info.location}</p>
         <p className='animalInfoP'>Ålder: {props.info.age}</p>
-        <p className='animalInfoP'>Energi-nivå: {props.info.Energy}</p>
+        <p className='animalInfoP'>Energi-nivå: {props.info.energy}</p>
       </article>
     </div>
   </div>
