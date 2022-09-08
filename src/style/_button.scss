@@ -1,6 +1,7 @@
-@mixin buttons {
+
+@mixin buttons ($color:#F680C7 ) {
     cursor: pointer;
-    background-color: #F680C7;
+    background-color: $color;
     border-radius: 20px;
     border: none;
     color: white;
