@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { ChangeEvent, FormEvent } from 'react'
 import {Animalinterface} from '../modules/interfaces'
 
 interface Props { 
   info:Animalinterface[];
   update: any
   }
+type FormType =  ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>
+
 
 const Filter = (props: Props) => {
 
-  function changeForm(event:any){
-  if (event.target.value== "male") {
-    console.log("male")
+  let filterSearch:any= {}
+  function changeForm(event:FormType){
+    if (event.target.value== "Hane"|| event.target.value== "Hona" ) {
+      filterSearch.gender = event.target.value
   }    
-
+    else if(event.target.value== "genderAny"){
+      delete filterSearch.gender
+    }
+  console.log(filterSearch)
   }
 
   return (
@@ -21,22 +27,24 @@ const Filter = (props: Props) => {
     <div className='filterWrapper'> 
       <div className='left-form'>
         <p>Plats</p> <input type="text" onChange={changeForm}></input>
-        <div className='searchForms' onChange={changeForm}>
-          <p>Gender</p> <select>
+        <div className='searchForms'>
+          <p>Gender</p> 
+          <select onChange={changeForm}>
           <option value="genderAny">Alla</option>
-          <option value="male">Hane</option>
-          <option value="female">Hona</option>
+          <option value="Hane">Hane</option>
+          <option value="Hona">Hona</option>
         </select>
-        <p>Storlek</p> <select onChange={changeForm}>
+        <p>Storlek</p> 
+          <select onChange={changeForm}>
           <option value="sizeAny">Alla</option>
-          <option value="s">Liten</option>
-          <option value="m">Medium</option>
-          <option value="l">Stor</option>
+          <option value="Liten">Liten</option>
+          <option value="Medium">Medium</option>
+          <option value="Stor">Stor</option>
         </select>
       <p>Typ</p> <select onChange={changeForm}>
         <option value="typeAny">Alla</option>
-        <option value="cat">Katt</option>
-        <option value="dog">Hund</option>
+        <option value="Katt">Katt</option>
+        <option value="Hund">Hund</option>
         <option value="other">Annat</option>
       </select>
       </div>
@@ -64,7 +72,7 @@ const Filter = (props: Props) => {
       </div>
     
     </div>
-    <button className='filter-button-cancel'>Nollställ</button>
+    <button className='filter-button-cancel' onClick={()=> filterSearch= {}}>Nollställ</button>
       <button className='filter-button'>Sök!</button>
   </div>
   )
