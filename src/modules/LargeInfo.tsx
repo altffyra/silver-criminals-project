@@ -2,6 +2,7 @@ import React from 'react'
 import {Animalinterface} from '../modules/interfaces'
 type Props = {
     info:Animalinterface;
+    showOverlay: any;
 }
 
 const LargeInfo = (props: Props) => {

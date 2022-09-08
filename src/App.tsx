@@ -32,7 +32,7 @@ function showOverlay(){
   })
 
   
-  const showLargeItem = showLarge? <LargeInfo info= {animalsState[0]} />  : ""
+  const showLargeItem = showLarge? <LargeInfo showOverlay= {showOverlay} info= {animalsState[0]} />  : ""
   
   return (
     <div className="App">
