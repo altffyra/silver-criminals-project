@@ -1,7 +1,15 @@
+.outerFilterWrapper{
+    display:flex;
+    flex-direction: column;
+    font-family: Krona One;
+    width:90%;
+    padding: 30px;
+
+}
+
 .filterWrapper {
     background-color: #F680C7;
     display: flex;
-    width: 90vw;
     justify-content: center;
     font-family: Krona One;
     margin:4rem;
@@ -14,7 +22,9 @@
     font-size: 16px;
     font-family: Krona One;
     }
-    .filter-button{
+
+}
+.filter-button{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -39,5 +49,4 @@
     max-width: 8em;
     max-height: 5em;
     @include buttons(red)
-}
 }
