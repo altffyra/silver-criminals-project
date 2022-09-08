@@ -9,8 +9,10 @@ interface Props {
   }
 
 const Animals = (props: Props) => {
-
-  ///FIXA progress bar
+  
+function readMoreFunction() {
+  props.showOverlay(props.info)
+}
 
   return (
 
@@ -34,7 +36,7 @@ const Animals = (props: Props) => {
 
         <div className='separator'></div>
 
-        <button className='readMore-button' onClick={props.showOverlay}> Läs mer! </button>
+        <button className='readMore-button' onClick={readMoreFunction}> Läs mer! </button>
       </section>
 
   )

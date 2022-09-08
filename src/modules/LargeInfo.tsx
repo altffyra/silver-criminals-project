@@ -6,12 +6,11 @@ type Props = {
 }
 
 const LargeInfo = (props: Props) => {
-  console.log(props.info);
   return (
     <div className="blurr-div">
       <div className="info__card">
         <div className="img__close">
-          <button className="close">x</button>
+          <button onClick={props.showOverlay} className="close">x</button>
           <img className="info__img" src={props.info.picture}></img>
         </div>
 

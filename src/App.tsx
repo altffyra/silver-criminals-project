@@ -11,10 +11,11 @@ import {Animalinterface} from './modules/interfaces'
 import LargeInfo from './modules/LargeInfo';
 
 function App() {
-
   const [animalsState , setAnimal] = useState<Animalinterface[]>(animals)
   const [adopted , setAdopted] = useState()
+  const [tempAnimalState , setTempAnimal] = useState<Animalinterface[]>()
   
+
   function timeToUpdate(filterArguments:Animalinterface){ 
   //   const tempArray = [...animalsState];
   //   // tempArray.filter(filterArguments)
@@ -22,17 +23,21 @@ function App() {
   }
   const [showLarge, flipBoolean] = useState(false)
 
-function showOverlay(){
-  flipBoolean(!showLarge)
-  console.log(showLarge)
+
+
+
+async function showOverlay(temp:number){
+  console.log(temp)
+  setTempAnimal(temp)
+  await flipBoolean(!showLarge)
 }
 
   const animalsMap = animals.map((animal, index) => {
     return <Animals showOverlay= {showOverlay} info = {animal} update = {timeToUpdate} index= {index} key = {index}/>
   })
 
+  const showLargeItem = showLarge? <LargeInfo showOverlay= {showOverlay} info= {tempAnimalState} />  : "";
   
-  const showLargeItem = showLarge? <LargeInfo showOverlay= {showOverlay} info= {animalsState[0]} />  : ""
   
   return (
     <div className="App">
@@ -40,8 +45,7 @@ function showOverlay(){
       <Hero />
       <Filter info = {animalsState} update = {timeToUpdate}/>
       <article className='animalGrid'>
-        
-        {animalsMap}
+      {animalsMap}
       </article>
       <CallToAction />
       <Footer />
