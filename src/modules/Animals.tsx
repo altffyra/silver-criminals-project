@@ -10,7 +10,6 @@ interface Props {
 const Animals = (props: Props) => {
 
   ///FIXA gender
-  const animalGender: string = ""
 
   function showAnimal(){
 

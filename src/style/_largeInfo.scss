@@ -1,24 +1,34 @@
 
-.info__card {
-    // visibility: hidden;
-    position: absolute;
-    width: 700px;
-    height: 1100px;
-     z-index: 100;
-    top:50%;
-    overflow: hidden;
+.blurr-div {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    .info__card {
+        // width: 50vw;
+        height: 90vh;
+         z-index: 100;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    
 }
 
-.info__card{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 
 .info__img{
-    width: 700px;
-    height: 610px;
+    // width: 700px;
+    // height: 610px;
     border-radius:22px 22px 0px 0px;
+    width: 700px; height: 337px; object-fit: cover;
 
 }
 .info__name{
@@ -48,7 +58,7 @@
     .info__card__about{
         font-family: 'Krub', sans-serif;font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1em;
         color: #000000;
         text-align: left;
         margin-top: 40px;

@@ -7,7 +7,7 @@ type Props = {
 const LargeInfo = (props: Props) => {
     console.log(props.info)
   return (
-    //HIDDEN KLASSEN GÖMMER ALLT
+    <div className='blurr-div'>
     <div className="info__card">
 
       <img className='info__img' src={props.info.picture}></img>
@@ -35,6 +35,7 @@ const LargeInfo = (props: Props) => {
         </p>
       </article> 
 
+  </div>
   </div>
   )
 }

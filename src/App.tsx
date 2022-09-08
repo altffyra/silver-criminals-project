@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import './App.css';
 import Header from './modules/Header';
 import Hero from './modules/Hero';
 import Filter from './modules/Filter';
