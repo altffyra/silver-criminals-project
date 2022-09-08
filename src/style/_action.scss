@@ -1,66 +1,66 @@
 @import "button";
 
-
-.action__card{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 480px;
-    margin-top:30px; margin-bottom:30px;
-    background: #FFFFFF;
-    padding-left: 100px;
+.action__card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 480px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  padding-left: 100px;
 }
 
-.action__text{
-    width: 970px;
-    height: 210px;
-    font-weight: 900;
-    font-size: 84px;
-    margin-bottom: 20px;
-    color: #000000;
-    font-family: 'Krub', sans-serif;
+.action__text {
+  width: 970px;
+  height: 210px;
+  font-weight: 900;
+  font-size: 84px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Krub", sans-serif;
 }
 
-.action__inner__card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: auto;
-    box-sizing: border-box;
-    width: 822px;
-    height: 201px;
-    background: #FFFFFF;
-    border: 1px solid #F680C7;
-    border-radius: 22px;
+.action__inner__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: auto;
+  box-sizing: border-box;
+  width: 822px;
+  height: 201px;
+  background: #ffffff;
+  border: 1px solid #f680c7;
+  border-radius: 22px;
 }
 
-.action__formula{
-    width: 667px;
-    height: 35px;
-    font-weight: 900;
-    font-size: 28px;
-    font-family: 'Krub', sans-serif;
-    text-align: center;
-    color: #000000;
+.action__formula {
+  width: 667px;
+  height: 35px;
+  font-weight: 900;
+  font-size: 28px;
+  font-family: "Krub", sans-serif;
+  text-align: center;
+  color: #000000;
 }
 
-.action__btn{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 216px;
-    height: 65px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    font-family: 'Krub', sans-serif;
-    @include buttons
+.action__btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 216px;
+  height: 65px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  font-family: "Krub", sans-serif;
+  @include buttons;
 }
 
-.action__btn__logo{
-    border-radius: 300px;
-    width: 30px;
+.action__btn__logo {
+  border-radius: 300px;
+  width: 30px;
 }
