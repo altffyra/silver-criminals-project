@@ -25,7 +25,7 @@ const LargeInfo = (props: Props) => {
         <div className='info__card__specs__two'>
           <p>Plats: {props.info.location}</p>
           <p>Ålder: {props.info.age}</p>
-          <p>Energi-nivå: {props.info.Energy}</p>
+          <p>Energi-nivå: {props.info.energy}</p>
         </div>
 
       <article className="animalInfoAbout">
@@ -37,7 +37,7 @@ const LargeInfo = (props: Props) => {
         <p className='animalInfoP'>Ålder: {props.info.age}</p>
         <p className='animalInfoP'>Energi-nivå: {props.info.energy}</p>
       </article>
-    </div>
+
 
       
       <p className='info__card__about'>Lorem ipsum dolor sit amet. Ex blanditiis voluptatem et maxime reprehenderit ea molestiae culpa quo velit voluptates ea possimus aspernatur! Sed expedita quia quo itaque saepe sit dolore similique aut illo atque est ducimus impedit. Et rerum dolorum internos molestias et quae doloribus non voluptas inventore aut aspernatur explicabo.
