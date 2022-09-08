@@ -28,21 +28,11 @@ const LargeInfo = (props: Props) => {
           <p>Energi-nivå: {props.info.energy}</p>
         </div>
 
-      <article className="animalInfoAbout">
-        <h1 className="animalName">{props.info.name}</h1>
-        <p className='animalInfoP'>Ras: {props.info.race}</p>
-        <p className='animalInfoP'>Typ: {props.info.type}</p>
-        <p className='animalInfoP'>Storlek: {props.info.size}</p>
-        <p className='animalInfoP'>Plats: {props.info.location}</p>
-        <p className='animalInfoP'>Ålder: {props.info.age}</p>
-        <p className='animalInfoP'>Energi-nivå: {props.info.energy}</p>
-      </article>
-
 
       
-      <p className='info__card__about'>Lorem ipsum dolor sit amet. Ex blanditiis voluptatem et maxime reprehenderit ea molestiae culpa quo velit voluptates ea possimus aspernatur! Sed expedita quia quo itaque saepe sit dolore similique aut illo atque est ducimus impedit. Et rerum dolorum internos molestias et quae doloribus non voluptas inventore aut aspernatur explicabo.
-         Sed illum velit qui fuga fugit non facilis tempore in natus aliquid. Aut molestias molestiae a veritatis consequatur ab nostrum omnis et repellat doloremque sit Quis eaque qui dolorum necessitatibus sit ullam amet.
-      </p>
+        <p className='info__card__about'>Lorem ipsum dolor sit amet. Ex blanditiis voluptatem et maxime reprehenderit ea molestiae culpa quo velit voluptates ea possimus aspernatur! Sed expedita quia quo itaque saepe sit dolore similique aut illo atque est ducimus impedit. Et rerum dolorum internos molestias et quae doloribus non voluptas inventore aut aspernatur explicabo.
+          Sed illum velit qui fuga fugit non facilis tempore in natus aliquid. Aut molestias molestiae a veritatis consequatur ab nostrum omnis et repellat doloremque sit Quis eaque qui dolorum necessitatibus sit ullam amet.
+        </p>
       </article> 
 
   </div>
