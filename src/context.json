@@ -134,7 +134,7 @@
     "location": "Karlstad",
     "energy": "10",
     "age": "1",
-    "booked": false,
+    "booked": true,
     "picture": "https://images.unsplash.com/photo-1584553421349-3557471bed79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1146&q=80",
     "WellWith": ["Stora barn "],
     "desc": "Loremtext" } ,
