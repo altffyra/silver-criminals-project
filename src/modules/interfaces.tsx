@@ -1,5 +1,6 @@
 export  interface Animalinterface {
     animalId: string;
+    incomeDate: string;
     name:string;
     type:string;
     race:string;

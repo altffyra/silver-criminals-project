@@ -20,18 +20,25 @@ function readMoreFunction() {
         <figure className='frame'>
           <img className='imageMedium' src={props.info.picture}></img>
         </figure>
-
+        <div className="top">
+       
         <h1 className='animalName'>{props.info.name}</h1>
-
+        <p className='date'>Kom till oss:<br></br>{props.info.incomeDate}</p>
+        </div>
         <div className='animalSpecs'>
-          <p>Kön: {props.info.gender}.</p>
-          <p>Storlek: {props.info.size}.</p>
-          <p>Typ: {props.info.type}.</p>
-          <p>Ras: {props.info.race}.</p>
-          <p>Ålder: {props.info.age} år.</p>
-          <p>Finns i: {props.info.location}.</p>
-          <p>Funkar med: {props.info.WellWith}.</p>
-          <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
+          <section className='section__one'>
+            <p>Typ: {props.info.type}.</p>
+            <p>Ras: {props.info.race}.</p>
+            <p>Kön: {props.info.gender}.</p>
+            <p>Storlek: {props.info.size}.</p>
+
+          </section>
+          <section className='section__two'>
+            <p>Ålder: {props.info.age} år.</p>
+            <p>Finns i: {props.info.location}.</p>
+            <p>Funkar med: {props.info.WellWith}.</p>
+            <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
+          </section>
         </div>
 
         <div className='separator'></div>

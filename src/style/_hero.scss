@@ -40,6 +40,11 @@
             max-width: 8em;
             max-height: 5em;
             @include buttons;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
     
             .heroLogo {
                 border-radius: 1000px;
