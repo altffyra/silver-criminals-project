@@ -20,19 +20,27 @@ const LargeInfo = (props: Props) => {
         </div>
 
         <article className="info__text">
-          <h1 className="info__name">{props.info.name}</h1>
+          <section className="largeTop">
+            <h1 className="info__name">{props.info.name}</h1>
+            <p className='date'>Kom till oss:<br></br>{props.info.incomeDate}</p>
+          </section>
 
-          <div className="info__card__specs__one">
-            <p>Ras: {props.info.race}.</p>
-            <p>Typ: {props.info.type}.</p>
-            <p>Storlek: {props.info.size}.</p>
+          <div className="largeAnimalSpecs">
+            <section className="largeSection__one">
+              <p>Typ: {props.info.type}.</p>
+              <p>Ras: {props.info.race}.</p>
+              <p>Kön: {props.info.gender}.</p>
+              <p>Storlek: {props.info.size}.</p>
+            </section>
+
+            <section className="largeSection__two">
+              <p>Ålder: {props.info.age} år.</p>
+              <p>Finns i: {props.info.location}.</p>
+              <p>Funkar med: {props.info.WellWith}.</p>
+              <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
+            </section>
           </div>
 
-          <div className="info__card__specs__two">
-            <p>Plats: {props.info.location}.</p>
-            <p>Ålder: {props.info.age} år.</p>
-            <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
-          </div>
 
           <p className="info__card__about">
             {props.info.desc}

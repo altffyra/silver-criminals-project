@@ -27,10 +27,11 @@ function readMoreFunction() {
         </div>
         <div className='animalSpecs'>
           <section className='section__one'>
-            <p>Kön: {props.info.gender}.</p>
-            <p>Storlek: {props.info.size}.</p>
             <p>Typ: {props.info.type}.</p>
             <p>Ras: {props.info.race}.</p>
+            <p>Kön: {props.info.gender}.</p>
+            <p>Storlek: {props.info.size}.</p>
+
           </section>
           <section className='section__two'>
             <p>Ålder: {props.info.age} år.</p>

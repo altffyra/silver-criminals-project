@@ -12,7 +12,7 @@
     font-family: "Krub", sans-serif;
     display: flex;
     flex-direction: column;
-    width: 25em;
+    width: 23em;
     border-right: 2px solid #F680C7;
     border-left: 2px solid #F680C7;
     border-bottom: 2px solid #F680C7;
@@ -57,12 +57,12 @@
         @include buttons
     }
     .frame {
-        width: 25em;
+        width: 23em;
 
 
 
     .imageMedium {
-        width: 25em;
+        width: 23em;
         height: 27em;
         object-fit: cover;
         border-top-left-radius: 20px;

@@ -13,52 +13,58 @@
 
     .info__card {
       position: absolute;
-        // width: 50vw;
+        width: 40em;
         max-height: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         overflow-y: auto;
-        -webkit-overflow-scrolling: touch; 
+        -webkit-overflow-scrolling: touch;
+        font-family: "Krub", sans-serif;
     }
     
 }
 
 .info__img {
-  // width: 700px;
-  // height: 610px;
-  border-radius: 22px 22px 0px 0px;
-  width: 700px;
-  height: 437px;
-  object-fit:fill;
+  width: 40em;
+  height: 27em;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-.info__name {
-  font-family: "Krub", sans-serif;
-  font-weight: 900;
-  font-size: 3em;
-  color: #000000;
-  margin-bottom: 20px;
-  width: 100%;
-}
+
 
 .info__text {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  align-content: flex-start;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  width: 700px;
-  height: 935px;
   background: #ffffff;
   border-right: 2px solid #f680c7;
   border-left: 2px solid #f680c7;
   border-bottom: 2px solid #f680c7;
   border-radius: 0px 0px 22px 22px;
+
+  .largeTop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+
+    .info__name {
+      font-size: 2em;
+    }
+  }
+
+
+
+  .largeAnimalSpecs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      font-size: 1.2em;
+      line-height: 1.6em;
+      gap: .5em;
+      text-align: left;
+      padding: 1em;
+  }
 
   .info__card__about {
     font-family: "Krub", sans-serif;
@@ -71,43 +77,43 @@
   }
 }
 
-.info__card__specs__one {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 300px;
-  height: 100px;
+// .info__card__specs__one {
+//   display: flex;
+//   flex-direction: column;
+//   align-content: space-around;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   width: 300px;
+//   height: 100px;
 
-  p {
-    font-family: "Krub", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    color: #000000;
-    margin-right: 40px;
-  }
-}
+//   p {
+//     font-family: "Krub", sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 22px;
+//     color: #000000;
+//     margin-right: 40px;
+//   }
+// }
 
-.info__card__specs__two {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 300px;
-  height: 100px;
+// .info__card__specs__two {
+//   display: flex;
+//   flex-direction: column;
+//   align-content: space-around;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   width: 300px;
+//   height: 100px;
 
-  p {
-    font-family: "Krub", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    color: #000000;
-    margin-right: 40px;
-  }
-}
+//   p {
+//     font-family: "Krub", sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 22px;
+//     color: #000000;
+//     margin-right: 40px;
+//   }
+// }
 
 .img__close {
   display: flex;
