@@ -36,7 +36,8 @@
     @include buttons
     }
     .searchForms{
-
+display: flex;
+flex-direction: column;
     
     }
 .filter-button-cancel{

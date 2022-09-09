@@ -1,21 +1,22 @@
 @import "button";
 
 .hero {
-    width: 100vw;
     display: flex;
     justify-content: center;
     position: relative;
 
     .heroImg {
-        border-radius: 20px;
-        max-width: 90vw;
+
+        width: 100%;
+        padding: 1em;
+        border-radius: 55px;
     }
 
     .heroTextSection {
         font-family: 'Krub', sans-serif;
         display: flex;
         flex-direction: column;
-        width: 25em;
+        width: 26em;
         height: 15.5em;
         position: absolute;
         background-color: #ffe1e1;
