@@ -36,7 +36,13 @@ function readMoreFunction() {
 
         <div className='separator'></div>
 
-        <button className='readMore-button' onClick={readMoreFunction}> Läs mer! </button>
+        <button className='readMore-button' onClick={readMoreFunction}> Läs mer! 
+              <img
+                className="adopt__btn__logo"
+                src="../src/assets/logo.png"
+                alt=""
+              />
+            </button>
       </section>
 
   )

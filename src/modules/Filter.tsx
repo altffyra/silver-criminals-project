@@ -26,11 +26,11 @@ const Filter = (props: Props) => {
       <h2>Sök efter:</h2>
     <div className='filterWrapper'> 
       <div className='left-form'>
-        <p>Plats</p> <input type="text" onChange={changeForm}></input>
+        <p>Plats</p> <input type="text" name="Location" onChange={changeForm}></input>
         <div className='searchForms'>
           <p>Gender</p> 
           <select onChange={changeForm}>
-          <option value="genderAny">Alla</option>
+          <option value="genderAny" >Alla</option>
           <option value="Hane">Hane</option>
           <option value="Hona">Hona</option>
         </select>
@@ -72,8 +72,18 @@ const Filter = (props: Props) => {
       </div>
     
     </div>
-    <button className='filter-button-cancel' onClick={()=> filterSearch= {}}>Nollställ</button>
-      <button className='filter-button'>Sök!</button>
+    <button className='filter-button-cancel' onClick={()=> filterSearch= {}}>Nollställ             <img
+              className="adopt__btn__logo"
+              src="../src/assets/logo.png"
+              alt=""
+            />
+            </button>
+      <button className='filter-button'>Sök!            <img
+              className="adopt__btn__logo"
+              src="../src/assets/logo.png"
+              alt=""
+            />
+            </button>
   </div>
   )
 }
