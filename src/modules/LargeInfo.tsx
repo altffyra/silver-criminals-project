@@ -1,11 +1,16 @@
 import React from "react";
 import { Animalinterface } from "../modules/interfaces";
+
 type Props = {
     info:Animalinterface;
     showOverlay: any;
+    switchToForm:any;
+
 }
 
 const LargeInfo = (props: Props) => {
+
+
   return (
     <div className="blurr-div">
       <div className="info__card">
@@ -33,15 +38,9 @@ const LargeInfo = (props: Props) => {
             Lorem ipsum dolor sit amet. Ex blanditiis voluptatem et maxime
             reprehenderit ea molestiae culpa quo velit voluptates ea possimus
             aspernatur! Sed expedita quia quo itaque saepe sit dolore similique
-            aut illo atque est ducimus impedit. Et rerum dolorum internos
-            molestias et quae doloribus non voluptas inventore aut aspernatur
-            explicabo. Sed illum velit qui fuga fugit non facilis tempore in
-            natus aliquid. Aut molestias molestiae a veritatis consequatur ab
-            nostrum omnis et repellat doloremque sit Quis eaque qui dolorum
-            necessitatibus sit ullam amet.
           </p>
 
-          <button className="adopt__btn">
+          <button onClick={props.switchToForm} className="adopt__btn">
             Adoptera mig!
             <img
               className="adopt__btn__logo"

@@ -22,7 +22,7 @@ const Filter = (props: Props) => {
   }
 
   return (
-    <div className='outerFilterWrapper'>
+    <div className='outerFilterWrapper' id="search">
       <h2>Sök efter:</h2>
     <div className='filterWrapper'> 
       <div className='left-form'>

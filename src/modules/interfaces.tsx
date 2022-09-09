@@ -17,4 +17,9 @@ export  interface Animalinterface {
 export interface Adopted {
   animalName: string;
   animalId: string;
+  userName: string;
+  userEmail: string;
+  userPhone: number;
+  
+
 }
