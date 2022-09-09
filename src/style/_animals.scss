@@ -1,5 +1,15 @@
+@import "button";
+
+.animalGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    max-width: 90vw;
+}
 
 .animalCard {
+    font-family: "Krub", sans-serif;
     display: flex;
     flex-direction: column;
     width: 25em;
@@ -10,7 +20,40 @@
     align-items: center;
     padding: 0 1em 1em 1em;
 
+    .top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5em;
+    }
+
+    .animalName {
+        font-size: 2em;
+        justify-self: center;
+    }
+
+    .date {
+        font-size: .8em;
+        justify-self: flex-start;
+
+    }
+
+    .animalSpecs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: .9em;
+        line-height: 1.6em;
+        gap: .5em;
+
+    }
+
+
+
     .readMore-button{
+        width: 9em;
+        padding: .5em;
+        margin-top: 1em;
         @include buttons
     }
     .frame {
@@ -18,29 +61,25 @@
 
 
 
-        .imageMedium {
-            width: 25em;
-            height: 27em;
-            object-fit: cover;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+    .imageMedium {
+        width: 25em;
+        height: 27em;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
 
         }
+
+
+
     }
 
 
 
 }
 
+
+
 .separator {
     flex-grow: 1;
 }
-
-.animalGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-    max-width: 90vw;
-}
-

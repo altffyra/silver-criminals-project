@@ -1,13 +1,14 @@
-import React from 'react'
-import { Animalinterface } from './interfaces'
+import React from 'react';
+import { Animalinterface } from './interfaces';
 
 type Props = {
-info:Animalinterface
-switchToForm: any;
-adoptConfirmed:any
+  info:Animalinterface;
+  switchToForm: any;
+  adoptConfirmed:any
 }
 
-const form = (props: Props) => {
+const Form = (props: Props) => {
+
   return (
 <div className="blurr-div">
       <div className="info__card">
@@ -47,4 +48,4 @@ const form = (props: Props) => {
   )
 }
 
-export default form
+export default Form

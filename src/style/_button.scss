@@ -1,6 +1,9 @@
 
 @mixin buttons ($color:#F680C7 ) {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: $color;
     border-radius: 20px;
     border: none;

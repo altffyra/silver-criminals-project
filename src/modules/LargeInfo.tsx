@@ -23,21 +23,19 @@ const LargeInfo = (props: Props) => {
           <h1 className="info__name">{props.info.name}</h1>
 
           <div className="info__card__specs__one">
-            <p>Ras: {props.info.race}</p>
-            <p>Typ: {props.info.type}</p>
-            <p>Storlek: {props.info.size}</p>
+            <p>Ras: {props.info.race}.</p>
+            <p>Typ: {props.info.type}.</p>
+            <p>Storlek: {props.info.size}.</p>
           </div>
 
           <div className="info__card__specs__two">
-            <p>Plats: {props.info.location}</p>
-            <p>Ålder: {props.info.age}</p>
-            <p>Energi-nivå: {props.info.energy}</p>
+            <p>Plats: {props.info.location}.</p>
+            <p>Ålder: {props.info.age} år.</p>
+            <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
           </div>
 
           <p className="info__card__about">
-            Lorem ipsum dolor sit amet. Ex blanditiis voluptatem et maxime
-            reprehenderit ea molestiae culpa quo velit voluptates ea possimus
-            aspernatur! Sed expedita quia quo itaque saepe sit dolore similique
+            {props.info.desc}
           </p>
 
           <button onClick={props.switchToForm} className="adopt__btn">

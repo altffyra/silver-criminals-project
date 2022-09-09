@@ -1,5 +1,6 @@
 { "animals" : [
     {"animalId": "1",
+    "incomeDate": "2022-06-30",
     "name":"Jens",
     "gender": "Hane",
     "type": "Katt",
@@ -10,10 +11,11 @@
     "age": "3",
     "booked": false,
     "picture": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*",
-    "WellWith": ["Små barn, ","stora barn, ","katter, ", "hundar "],
+    "WellWith": ["Små barn, ","stora barn, ","katter "],
     "desc": "Loremtext" } ,
 
     {"animalId": "2",
+    "incomeDate": "2022-06-30",
     "name":"Ove",
     "gender": "Hane",
     "type": "Katt",
@@ -28,6 +30,7 @@
     "desc": "Loremtext" } ,
 
     {"animalId": "3",
+    "incomeDate": "2022-06-30",
     "name":"Kaktusätarn",
     "gender": "Hane",
     "type": "Katt",
@@ -42,6 +45,7 @@
     "desc": "Loremtext" } ,
 
     {"animalId": "4",
+    "incomeDate": "2022-06-30",
     "name":"Jelly",
     "gender": "Hona",
     "type": "Fisk",
@@ -56,6 +60,7 @@
     "desc": "Loremtext" } ,
 
     {"animalId": "5",
+    "incomeDate": "2022-06-30",
     "name":"Coco ",
     "gender": "Hona",
     "type": "Hund",
@@ -70,6 +75,7 @@
     "desc": "Loremtext" },
 
     {"animalId": "6",
+    "incomeDate": "2022-06-30",
     "name":"Lord of Destruction",
     "gender": "Hane",
     "type": "Katt",
@@ -84,6 +90,7 @@
     "desc": "Loremtext" } ,
 
     {"animalId": "7",
+    "incomeDate": "2022-06-30",
     "name":"Jeff",
     "gender": "Hane",
     "type": "Katt",
@@ -94,10 +101,11 @@
     "age": "0",
     "booked": false,
     "picture": "https://www.kattras.nu/wp-content/uploads/2017/10/bengal-kattunge.jpg",
-    "WellWith": ["Små barn, ", "stora barn, ", "hundar, ", "katter "],
+    "WellWith": ["Små barn, ", "stora barn, ", "hundar "],
     "desc": "Loremtext" } , 
 
     {"animalId": "8",
+    "incomeDate": "2022-06-30",
     "name":"Loco ",
     "gender": "Hane",
     "type": "Fågel",
@@ -112,6 +120,7 @@
     "desc": "Loremtext" } ,
 
     {"animalId": "9",
+    "incomeDate": "2022-06-30",
     "name":"Bubba",
     "gender": "Hane",
     "type": "Hund",
@@ -126,6 +135,7 @@
     "desc": "Loremtext" }, 
 
     {"animalId": "10",
+    "incomeDate": "2022-06-30",
     "name":"Minx",
     "gender": "Hona",
     "type": "Gnagare",
@@ -140,6 +150,7 @@
     "desc": "Loremtext" } ,
 
     {"animalId": "11",
+    "incomeDate": "2022-06-30",
     "name":"Flash",
     "gender": "Hane",
     "type": "Hund",
