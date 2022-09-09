@@ -1,0 +1,53 @@
+.outerFilterWrapper{
+    display:flex;
+    flex-direction: column;
+    font-family: Krona One;
+    width:90%;
+    padding: 30px;
+
+}
+
+.filterWrapper {
+    background-color: #F680C7;
+    display: flex;
+    justify-content: center;
+    font-family: Krona One;
+    margin:4rem;
+    border-radius: 22px;
+    padding:22px;
+
+    input {
+    height: 30px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: Krona One;
+    }
+
+}
+.filter-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    font-size: 26px;
+    align-self: flex-end;
+    max-width: 8em;
+    max-height: 5em;
+    @include buttons
+    }
+    .searchForms{
+display: flex;
+flex-direction: column;
+    
+    }
+.filter-button-cancel{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    font-size: 26px;
+    align-self: flex-end;
+    max-width: 8em;
+    max-height: 5em;
+    @include buttons(red)
+}

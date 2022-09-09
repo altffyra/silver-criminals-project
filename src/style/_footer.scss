@@ -1,63 +1,83 @@
-
-
-.footer{
-    height: 20em;
-    background: #F680C7; 
+.footer {
+  width: 100%;
+  height: 20em;
+  background: #f680c7;
 }
 
-.footer__flex{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 16px;
-    padding-top: 14px;
-  }
-
-.logo__item__1, .logo__item__2, .social__item {margin: 0px;}
-.logo__item__1, .logo__item__2, .optn__item, .social__item { font-family: 'Krub', sans-serif; color: #000000;}
-.logo__item__2 { margin-left: 20px;}
-.logo__item {font-size: 34px;}
-.optn__item { margin-bottom: 18px;}
-.img{border-radius: 300px; width: 82px; height: 78px; margin-right: 18px;}
-
-.logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
+.footer__flex {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+  padding-top: 14px;
 }
 
-.optn{
-    display: flex;
-    flex-direction: column;
-    font-weight: 900;
-    font-size: 22px;
-    margin-top: 20px;
+.logo__item__1,
+.logo__item__2,
+.social__item {
+  margin: 0px;
+}
+.logo__item__1,
+.logo__item__2,
+.optn__item,
+.social__item {
+  font-family: "Krub", sans-serif;
+  color: #000000;
+}
+.logo__item__2 {
+  margin-left: 20px;
+}
+.logo__item {
+  font-size: 34px;
+}
+.optn__item {
+  margin-bottom: 18px;
+}
+.img {
+  border-radius: 300px;
+  width: 82px;
+  height: 78px;
+  margin-right: 18px;
 }
 
-.social{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-weight: 900;
-    font-size: 22px;
-    margin-top: 20px;
-    width: 171px;
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.social__img{
-    width: 45px;
-    height: 45px;
-    margin: 6px;
+.optn {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  font-size: 22px;
+  margin-top: 20px;
 }
-.copyright{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    height: 136px;
-    font-weight: 800;
-    font-size: 16px;
-    color: #000000;
-    font-family: 'Krub', sans-serif;
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 22px;
+  margin-top: 20px;
+  width: 171px;
+}
+
+.social__img {
+  width: 45px;
+  height: 45px;
+  margin: 6px;
+}
+.copyright {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 136px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Krub", sans-serif;
 }

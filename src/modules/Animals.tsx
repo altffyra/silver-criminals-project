@@ -5,17 +5,14 @@ interface Props {
   info:Animalinterface
   update: any
   index: number
+  showOverlay:any
   }
 
 const Animals = (props: Props) => {
-
-  ///FIXA gender
-  const animalGender: string = ""
-
-  function showAnimal(){
-
-    
-  }
+  
+function readMoreFunction() {
+  props.showOverlay(props.info)
+}
 
   return (
 
@@ -39,7 +36,13 @@ const Animals = (props: Props) => {
 
         <div className='separator'></div>
 
-        <button className='readMore-button' onClick={showAnimal}> Läs mer! </button>
+        <button className='readMore-button' onClick={readMoreFunction}> Läs mer! 
+              <img
+                className="adopt__btn__logo"
+                src="../src/assets/logo.png"
+                alt=""
+              />
+            </button>
       </section>
 
   )

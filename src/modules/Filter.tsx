@@ -1,42 +1,54 @@
-import React from 'react'
+import React, { ChangeEvent, FormEvent } from 'react'
 import {Animalinterface} from '../modules/interfaces'
 
 interface Props { 
   info:Animalinterface[];
   update: any
   }
+type FormType =  ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>
+
 
 const Filter = (props: Props) => {
 
-  function changeForm(event:any){
-  if (event.target.value== "male") {
-    console.log("male")
+  let filterSearch:any= {}
+  function changeForm(event:FormType){
+    if (event.target.value== "Hane"|| event.target.value== "Hona" ) {
+      filterSearch.gender = event.target.value
   }    
-
+    else if(event.target.value== "genderAny"){
+      delete filterSearch.gender
+    }
+  console.log(filterSearch)
   }
 
   return (
-    <div> 
+    <div className='outerFilterWrapper' id="search">
       <h2>Sök efter:</h2>
-      <p>Plats</p> <input type="text" onChange={changeForm}></input>
-      <div className='searchForms' onChange={changeForm}>
-        <p>Gender</p> <select>
-        <option value="genderAny">Alla</option>
-        <option value="male">Hane</option>
-        <option value="female">Hona</option>
-      </select>
-      <p>Storlek</p> <select onChange={changeForm}>
-        <option value="sizeAny">Alla</option>
-        <option value="s">Liten</option>
-        <option value="m">Medium</option>
-        <option value="l">Stor</option>
-      </select>
+    <div className='filterWrapper'> 
+      <div className='left-form'>
+        <p>Plats</p> <input type="text" name="Location" onChange={changeForm}></input>
+        <div className='searchForms'>
+          <p>Gender</p> 
+          <select onChange={changeForm}>
+          <option value="genderAny" >Alla</option>
+          <option value="Hane">Hane</option>
+          <option value="Hona">Hona</option>
+        </select>
+        <p>Storlek</p> 
+          <select onChange={changeForm}>
+          <option value="sizeAny">Alla</option>
+          <option value="Liten">Liten</option>
+          <option value="Medium">Medium</option>
+          <option value="Stor">Stor</option>
+        </select>
       <p>Typ</p> <select onChange={changeForm}>
         <option value="typeAny">Alla</option>
-        <option value="cat">Katt</option>
-        <option value="dog">Hund</option>
+        <option value="Katt">Katt</option>
+        <option value="Hund">Hund</option>
         <option value="other">Annat</option>
       </select>
+      </div>
+      <div className='right-form'>
       <p>Bra med små barn</p> <select onChange={changeForm}>
       <option value="goodWithAnySmall">Ingen Preferens</option>
       <option value="goodWithChildrenUnder5">Bra</option>
@@ -52,12 +64,27 @@ const Filter = (props: Props) => {
       <p>Bra med hundar</p> <select onChange={changeForm}>
       <option value="goodWithDogsAny">Ingen Preferens</option>
       <option value="goodWithDogs">Bra</option>
-      </select>
-      <button></button>
       
-
+      </select>
       </div>
+
+    
+      </div>
+    
     </div>
+    <button className='filter-button-cancel' onClick={()=> filterSearch= {}}>Nollställ             <img
+              className="adopt__btn__logo"
+              src="../src/assets/logo.png"
+              alt=""
+            />
+            </button>
+      <button className='filter-button'>Sök!            <img
+              className="adopt__btn__logo"
+              src="../src/assets/logo.png"
+              alt=""
+            />
+            </button>
+  </div>
   )
 }
 

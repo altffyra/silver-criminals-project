@@ -1,30 +1,57 @@
-import React from 'react'
-import {Animalinterface} from '../modules/interfaces'
+import React from "react";
+import { Animalinterface } from "../modules/interfaces";
+
 type Props = {
     info:Animalinterface;
+    showOverlay: any;
+    switchToForm:any;
+
 }
 
 const LargeInfo = (props: Props) => {
-    console.log(props.info)
-  return (
-    //HIDDEN KLASSEN GÖMMER ALLT
-    <div className="animalInfoWrapper hidden">
-    <div className="animalInfo">
-      <div className="animalInfoImage">
-            <img src={props.info.picture}></img>
-        </div>
-      <article className="animalInfoAbout">
-        <h1 className="animalName">{props.info.name}</h1>
-        <p className='animalInfoP'>Ras: {props.info.race}</p>
-        <p className='animalInfoP'>Typ: {props.info.type}</p>
-        <p className='animalInfoP'>Storlek: {props.info.size}</p>
-        <p className='animalInfoP'>Plats: {props.info.location}</p>
-        <p className='animalInfoP'>Ålder: {props.info.age}</p>
-        <p className='animalInfoP'>Energi-nivå: {props.info.energy}</p>
-      </article>
-    </div>
-  </div>
-  )
-}
 
-export default LargeInfo
+
+  return (
+    <div className="blurr-div">
+      <div className="info__card">
+        <div className="img__close">
+          <button onClick={props.showOverlay} className="close">x</button>
+          <img className="info__img" src={props.info.picture}></img>
+        </div>
+
+        <article className="info__text">
+          <h1 className="info__name">{props.info.name}</h1>
+
+          <div className="info__card__specs__one">
+            <p>Ras: {props.info.race}</p>
+            <p>Typ: {props.info.type}</p>
+            <p>Storlek: {props.info.size}</p>
+          </div>
+
+          <div className="info__card__specs__two">
+            <p>Plats: {props.info.location}</p>
+            <p>Ålder: {props.info.age}</p>
+            <p>Energi-nivå: {props.info.energy}</p>
+          </div>
+
+          <p className="info__card__about">
+            Lorem ipsum dolor sit amet. Ex blanditiis voluptatem et maxime
+            reprehenderit ea molestiae culpa quo velit voluptates ea possimus
+            aspernatur! Sed expedita quia quo itaque saepe sit dolore similique
+          </p>
+
+          <button onClick={props.switchToForm} className="adopt__btn">
+            Adoptera mig!
+            <img
+              className="adopt__btn__logo"
+              src="../src/assets/logo.png"
+              alt=""
+            />
+          </button>
+        </article>
+      </div>
+    </div>
+  );
+};
+
+export default LargeInfo;
