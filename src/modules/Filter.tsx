@@ -1,10 +1,12 @@
 import React, { ChangeEvent, FormEvent } from 'react'
 import {Animalinterface, FilterInterface} from '../modules/interfaces'
 import { SetStateAction, useState } from 'react';
-
 interface Props { 
   info:Animalinterface[];
   update: any
+  filter:FilterInterface| any;
+  setFilter:any
+  cancelFilter:any
   }
 
   
@@ -16,23 +18,10 @@ type FormType =  ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>
 
 const Filter = (props: Props) => {
 
-  const [filter, setFilter] = useState<FilterInterface | any>({})
- 
-  function changeForm(e:FormType){
+  function changeForm(e:FormType | event){
+    props.update(e)
+  }
 
-    if (e.target.value == "Any") {
-      const prop = e.target.name;
-      delete filter[prop]
-      console.log(filter)
-  }
-    else {
-    setFilter({
-      ...filter,
-      [e.target.name]: e.target.value
-    })
-    console.log(filter)
-  }
-  }
   return (
     <div className='outerFilterWrapper' id="search">
       <h2>Sök efter:</h2>
@@ -88,7 +77,8 @@ const Filter = (props: Props) => {
       </div>
     
     </div>
-    <button className='filter-button-cancel' onClick={()=> filterSearch= {}}>Nollställ             <img
+    {/* BYT FUNKTION */}
+    <button className='filter-button-cancel' onClick={()=> props.cancelFilter}>Nollställ             <img
               className="adopt__btn__logo"
               src="../src/assets/logo.png"
               alt=""

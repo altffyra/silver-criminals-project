@@ -14,6 +14,7 @@ function readMoreFunction() {
   props.showOverlay(props.info)
 }
 
+
   return (
 
       <section className='animalCard'>

@@ -10,6 +10,7 @@ import {animals} from './context.json'
 import {Animalinterface, Adopted} from './modules/interfaces'
 import LargeInfo from './modules/LargeInfo';
 import Form from './modules/Form'
+import { FilterInterface } from './modules/interfaces';
 
 function App() {
   const [showLarge, flipBoolean] = useState(false)
@@ -17,6 +18,9 @@ function App() {
   const [animalsState , setAnimal] = useState<Animalinterface[]>(animals)
   const [tempAnimalState , setTempAnimal] = useState<Animalinterface>(animals[0])
   const [adopted , setAdopted] = useState<Adopted[]>()
+  const [filter, setFilter] = useState<FilterInterface | any>({})
+  const [filteredAnimal, setFiltered] = useState<Animalinterface[]>(animals)
+  let tempArray:[] = []
   // adopted( animalID, Namn ,Telefonnummer, E-post )
  
    function showOverlay(temp: SetStateAction<Animalinterface>){
@@ -34,22 +38,45 @@ function App() {
     // setAdopted(Temparray)
     flipBoolean(!showInterest)
   }
+  function cancelFilter(){
+    filteredAnimal(animals)
+    tempArray = []
+  }
 
-
-  function timeToUpdate(filterArguments:Animalinterface){ 
+  function timeToUpdate( e: any, filterArguments:Animalinterface){ 
   //   const tempArray = [...animalsState];
   //   // tempArray.filter(filterArguments)
   //   setAnimal(tempArray)
+  if (e.target.value == "Any") {
+    const prop = e.target.name;
+    delete filter[prop]
+    console.log(filter)
+}
+  else {
+  setFilter({
+    ...filter,[e.target.name]: e.target.value}) }
+
+
+  for (let index = 0; index < animalsState.length; index++) {
+    const singleCompareAnimal:Animalinterface = animalsState[index];
+    let test = Object.entries(filter)
+          .every(([key, value]) => singleCompareAnimal[key] === value )
+   if (test===true){
+    tempArray.push(singleCompareAnimal)
   }
- 
+  }
+  setFiltered(tempArray)
+  console.log(tempArray)
+  }
 
 
 
 
 
 
-  const animalsMap = animals.map((animal, index) => {
-    return <Animals showOverlay= {showOverlay} info = {animal} update = {timeToUpdate} index= {index} key = {index}/>
+
+  const animalsMap = filteredAnimal.map((animal, index) => {
+    return <Animals showOverlay= {showOverlay} info = {animal} update = {timeToUpdate} index= {index} key = {index} />
   })
   const showInterestPage = showInterest? <Form switchToForm= {switchToForm} info= {tempAnimalState} adoptConfirmed = {adoptConfirmed} />  : "";
   const showLargeItem = showLarge? <LargeInfo switchToForm = {switchToForm} showOverlay= {showOverlay} info= {tempAnimalState}  />  : "";
@@ -59,7 +86,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Filter info = {animalsState} update = {timeToUpdate}/>
+      <Filter info = {animalsState} update = {timeToUpdate} filter= {filter} setFilter={setFilter} cancelFilter = {cancelFilter}/>
       <article className='animalGrid'>
       {animalsMap}
       </article>
