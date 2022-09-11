@@ -11,22 +11,19 @@
   background-color: rgba($color: #000000, $alpha: 0.5);
 
   .info__card {
-    position: absolute;
-    width: 40em;
-    max-height: 100%;
+    width: 600px;
+    height: 735px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
     font-family: "Krub", sans-serif;
   }
 }
 
 .info__img {
-  width: 40em;
-  max-height: 40em;
+  width: 600px;
+  max-height: 380px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -40,11 +37,11 @@
   border-radius: 0px 0px 22px 22px;
 
   .largeTop {
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     .info__name {
       font-size: 2em;
@@ -54,7 +51,7 @@
   .largeAnimalSpecs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    font-size: 1.2em;
+    font-size: 14px;
     line-height: 1.6em;
     gap: 0.5em;
     text-align: left;
@@ -65,50 +62,12 @@
     font-family: "Krub", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 14px;
     color: #000000;
     text-align: left;
-    margin-top: 30px;
+    margin: 10px;
   }
 }
-
-// .info__card__specs__one {
-//   display: flex;
-//   flex-direction: column;
-//   align-content: space-around;
-//   align-items: flex-start;
-//   justify-content: space-between;
-//   width: 300px;
-//   height: 100px;
-
-//   p {
-//     font-family: "Krub", sans-serif;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 22px;
-//     color: #000000;
-//     margin-right: 40px;
-//   }
-// }
-
-// .info__card__specs__two {
-//   display: flex;
-//   flex-direction: column;
-//   align-content: space-around;
-//   align-items: flex-start;
-//   justify-content: space-between;
-//   width: 300px;
-//   height: 100px;
-
-//   p {
-//     font-family: "Krub", sans-serif;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 22px;
-//     color: #000000;
-//     margin-right: 40px;
-//   }
-// }
 
 .img__close {
   display: flex;
@@ -127,20 +86,16 @@
 }
 
 .adopt__btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
   margin-top: 18px;
   margin-bottom: 18px;
-  width: 216px;
-  height: 65px;
+  margin-left: 33%;
+  width: 200px;
+  height: 40px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  font-family: "Krub", sans-serif;
   @include buttons;
 }
 

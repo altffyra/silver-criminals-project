@@ -10,15 +10,26 @@ type Props = {
 const Form = (props: Props) => {
   return (
     <div className="blurr-div">
-      <div className="info__card">
-        <div className="img__close">
-          <button onClick={props.switchToForm} className="close">
-            x
-          </button>
-        </div>
-        <h1>Intresse Anmälan {props.info.name}</h1>
-        <article className="info__text">
-          <div className="info__card__specs__one"></div>
+      <div className="form__close">
+        <button onClick={props.switchToForm} className="close">
+          x
+        </button>
+
+        <article className="form__card">
+          <h1 className="form__name">Intresse Anmälan {props.info.name}</h1>
+
+          <form className="form">
+            <label>
+              För- och efternamn:{" "}
+              <input className="form__input" type="text"></input>{" "}
+            </label>
+            <label>
+              E-mail: <input className="form__input" type="text"></input>
+            </label>
+            <label>
+              Telefon nr: <input className="form__input" type="text"></input>
+            </label>
+          </form>
 
           <p className="info__card__about">
             Disclaimer: Hundar Utan Hem behöver behandla dina personuppgifter
@@ -32,10 +43,10 @@ const Form = (props: Props) => {
             läst och förstått villkoren och integritetspolicyn.
           </p>
 
-          <button className="adopt__btn" onClick={props.adoptConfirmed}>
+          <button className="send__btn" onClick={props.adoptConfirmed}>
             Skicka intresseanmälan
             <img
-              className="adopt__btn__logo"
+              className="send__btn__logo"
               src="../src/assets/logo.png"
               alt=""
             />
