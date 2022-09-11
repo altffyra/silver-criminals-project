@@ -2,27 +2,29 @@ import React from "react";
 import { Animalinterface } from "../modules/interfaces";
 
 type Props = {
-    info:Animalinterface;
-    showOverlay: any;
-    switchToForm:any;
-
-}
+  info: Animalinterface;
+  showOverlay: any;
+  switchToForm: any;
+};
 
 const LargeInfo = (props: Props) => {
-
-
   return (
     <div className="blurr-div">
       <div className="info__card">
         <div className="img__close">
-          <button onClick={props.showOverlay} className="close">x</button>
+          <button onClick={props.showOverlay} className="close">
+            x
+          </button>
           <img className="info__img" src={props.info.picture}></img>
         </div>
 
         <article className="info__text">
           <section className="largeTop">
             <h1 className="info__name">{props.info.name}</h1>
-            <p className='date'>Kom till oss:<br></br>{props.info.incomeDate}</p>
+            <p className="date">
+              Kom till oss:<br></br>
+              {props.info.incomeDate}
+            </p>
           </section>
 
           <div className="largeAnimalSpecs">
@@ -41,10 +43,7 @@ const LargeInfo = (props: Props) => {
             </section>
           </div>
 
-
-          <p className="info__card__about">
-            {props.info.desc}
-          </p>
+          <p className="info__card__about">{props.info.desc}</p>
 
           <button onClick={props.switchToForm} className="adopt__btn">
             Adoptera mig!

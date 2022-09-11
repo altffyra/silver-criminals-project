@@ -1,19 +1,19 @@
-export  interface Animalinterface {
-    animalId: string;
-    incomeDate: string;
-    name:string;
-    type:string;
-    race:string;
-    size:string;
-    location:string;
-    energy:string;
-    age:string;
-    booked:boolean;
-    picture:string;
-    WellWith:string[];
-    gender:string;
-    desc:string;
-  }
+export interface Animalinterface {
+  animalId: string;
+  incomeDate: string;
+  name: string;
+  type: string;
+  race: string;
+  size: string;
+  location: string;
+  energy: string;
+  age: string;
+  booked: boolean;
+  picture: string;
+  WellWith: string[];
+  gender: string;
+  desc: string;
+}
 
 export interface Adopted {
   animalName: string;
@@ -21,22 +21,20 @@ export interface Adopted {
   userName: string;
   userEmail: string;
   userPhone: number;
-  
-
 }
 
-export  interface FilterInterface {
+export interface FilterInterface {
   animalId?: string;
-  name?:string;
-  type?:string;
-  race?:string;
-  size?:string;
-  location?:string;
-  energy?:string;
-  age?:string;
-  booked?:boolean;
-  picture?:string;
-  WellWith?:string[];
-  gender?:string;
-  desc?:string;
+  name?: string;
+  type?: string;
+  race?: string;
+  size?: string;
+  location?: string;
+  energy?: string;
+  age?: string;
+  booked?: boolean;
+  picture?: string;
+  WellWith?: string[];
+  gender?: string;
+  desc?: string;
 }

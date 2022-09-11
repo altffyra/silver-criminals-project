@@ -1,57 +1,54 @@
 @import "button";
 
 .hero {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .heroImg {
+    width: 100%;
+    padding: 1em;
+    border-radius: 55px;
+  }
+
+  .heroTextSection {
+    font-family: "Krub", sans-serif;
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    width: 26em;
+    height: 15.5em;
+    position: absolute;
+    background-color: #ffe1e1;
+    border-radius: 20px;
+    padding: 1em;
+    top: 3em;
+    left: 7em;
+    padding: 1.5em;
 
-    .heroImg {
-
-        width: 100%;
-        padding: 1em;
-        border-radius: 55px;
+    .heroText {
+      font-family: "Krona One", sans-serif;
+      font-size: 28px;
     }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0.5em;
+      font-size: 26px;
+      align-self: flex-end;
+      max-width: 8em;
+      max-height: 5em;
+      @include buttons;
 
-    .heroTextSection {
-        font-family: 'Krub', sans-serif;
-        display: flex;
-        flex-direction: column;
-        width: 26em;
-        height: 15.5em;
-        position: absolute;
-        background-color: #ffe1e1;
-        border-radius: 20px;
-        padding: 1em;
-        top: 3em;
-        left: 7em;
-        padding: 1.5em;
+      a {
+        text-decoration: none;
+        color: white;
+      }
 
-        .heroText {
-            font-family: 'Krona One', sans-serif;
-            font-size: 28px;
-        }
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 0.5em;
-            font-size: 26px;
-            align-self: flex-end;
-            max-width: 8em;
-            max-height: 5em;
-            @include buttons;
-
-            a {
-                text-decoration: none;
-                color: white;
-            }
-    
-            .heroLogo {
-                border-radius: 1000px;
-                width: 1.5em;
-            }
-        }
+      .heroLogo {
+        border-radius: 1000px;
+        width: 1.5em;
+      }
     }
-
-
+  }
 }
