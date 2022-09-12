@@ -7,8 +7,12 @@ type Props = {
   switchToForm: any;
 };
 
+
 const LargeInfo = (props: Props) => {
 
+  const bookedLarge: string = props.info.booked
+    ? "frame bookedStampLarge"
+    : "frame";
 
 
   return (
@@ -18,7 +22,10 @@ const LargeInfo = (props: Props) => {
           <button onClick={props.showOverlay} className="close">
             x
           </button>
-          <img className="info__img" src={props.info.picture}></img>
+          <figure className={bookedLarge}>
+            <img className="info__img" src={props.info.picture}></img>
+          </figure>
+ 
         </div>
 
         <article className="info__text">
@@ -48,14 +55,15 @@ const LargeInfo = (props: Props) => {
 
           <p className="info__card__about">{props.info.desc}</p>
 
-          <button onClick={props.switchToForm} className="adopt__btn">
+          {props.info.booked
+            ? " "
+            :
+            <button onClick={props.switchToForm} className="adopt__btn">
             Adoptera mig!
             <img
-              className="adopt__btn__logo"
-              src="../src/assets/logo.png"
-              alt=""
-            />
-          </button>
+              className="adopt__btn__logo" src="../src/assets/logo.png" alt=""/>
+          </button>}
+
         </article>
       </div>
     </div>
