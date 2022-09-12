@@ -25,6 +25,7 @@
   width: 600px;
   max-height: 380px;
   object-fit: cover;
+
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -73,6 +74,7 @@
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  background-color: white;
 }
 .close {
   position: relative;
