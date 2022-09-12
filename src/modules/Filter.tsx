@@ -59,7 +59,8 @@ const Filter = (props: Props) => {
               <option value="other">Annat</option>
             </select>
           </div>
-          <div className="right-form">
+        </div>
+        <div className="right-form">
             <p>Bra med små barn</p>
             <select name="WellWithSmall" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
@@ -81,7 +82,6 @@ const Filter = (props: Props) => {
               <option value="Hundar">Bra</option>
             </select>
           </div>
-        </div>
       </div>
       {/* BYT FUNKTION */}
       {/* <button
