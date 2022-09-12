@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from "react";
 import { Animalinterface } from "./interfaces";
 
@@ -30,3 +31,18 @@ const AdoptionForm = (props: Props) => {
 };
 
 export default AdoptionForm;
+=======
+import React from 'react'
+
+type Props = {
+   
+}
+
+const AdoptionForm = (props: Props) => {
+  return (
+    <div>AdoptionForm</div>
+  )
+}
+
+export default AdoptionForm
+>>>>>>> Stashed changes

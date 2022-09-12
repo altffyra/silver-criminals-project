@@ -64,7 +64,7 @@ const Form = (props: Props) => {
             för att kunna kontakta dig för att gå vidare i processen. Rescue Rabbits
              delar inte någon av dina personuppgifter till tredje part
             utöver det du godkänner nedan, och du har när som helst rätt att
-            återkalla ditt samtycke. Du är välkommen att kontakta oss på
+            återkalla ditt samtycke. Du är välkommen att kontakta 
             David Andersson om du har några frågor. Jag godkänner Rescue Rabbits
              behandling av mina personuppgifter enligt ovan. Jag har
             läst och förstått villkoren och integritetspolicyn.

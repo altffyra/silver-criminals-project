@@ -1,6 +1,9 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  callToActionShow:any
+  callToActionBoolean:boolean
+};
 
 const CallToAction = (props: Props) => {
   return (
@@ -16,7 +19,7 @@ const CallToAction = (props: Props) => {
           {" "}
           Fyll i formuläret för att lägga upp för adoption
         </h3>
-        <button className="action__btn">
+        <button onClick={()=>props.callToActionShow(!props.callToActionBoolean)} className="action__btn">
           Till formuläret{" "}
           <img
             className="action__btn__logo"

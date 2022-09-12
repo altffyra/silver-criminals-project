@@ -11,10 +11,12 @@ import LargeInfo from "./modules/LargeInfo";
 import Form from "./modules/Form";
 import AdoptionForm from "./modules/AdoptionForm"
 import { FilterInterface } from "./modules/interfaces";
+import AdoptionForm from "./modules/AdoptionForm";
 
 function App() {
   const [showLarge, flipBoolean] = useState(false);
   const [showInterest, flipInterest] = useState(false);
+  const [callToActionBoolean, callToActionShow] = useState(false)
   const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
   const [tempAnimalState, setTempAnimal] = useState<Animalinterface>(
     animals[0]);
@@ -22,6 +24,7 @@ function App() {
   const [filter, setFilter] = useState<FilterInterface | any>({});
   const [filteredAnimal, setFiltered] = useState<Animalinterface[]>(animals);
   let tempArray: Animalinterface[] = [];
+
   // adopted( animalID, Namn ,Telefonnummer, E-post )
 
   function showOverlay(temp: SetStateAction<Animalinterface>) {
@@ -34,24 +37,23 @@ function App() {
     flipInterest(!showInterest);
   }
 
-  function adoptConfirmed(adoptedAnimal:Adopted) {
-    let TempAdopted = []
-    
+  function adoptConfirmed(adoptedAnimal: Adopted) {
+    let TempAdopted = [];
+
     for (let index = 0; index < animalsState.length; index++) {
       const singleAnimal = animalsState[index];
-      if (singleAnimal.name == adoptedAnimal.animalName)
-      {let tempAnimalArray = [...animalsState]
-      tempAnimalArray[index].booked= true
-      setAnimal(tempAnimalArray)
-      console.log(animalsState)
+      if (singleAnimal.name == adoptedAnimal.animalName) {
+        let tempAnimalArray = [...animalsState];
+        tempAnimalArray[index].booked = true;
+        setAnimal(tempAnimalArray);
+        console.log(animalsState);
       }
     }
-    TempAdopted = [...adopted, adoptedAnimal]
-    setAdopted(TempAdopted) 
+    TempAdopted = [...adopted, adoptedAnimal];
+    setAdopted(TempAdopted);
     flipInterest(!showInterest);
-    alert("Du är nu bokad för " + adoptedAnimal.animalName)
-    console.log(adopted)
-  
+    alert("Du är nu bokad för " + adoptedAnimal.animalName);
+    console.log(adopted);
   }
   function cancelFilter() {
     setFiltered(animals);
@@ -109,9 +111,11 @@ function App() {
       showOverlay={showOverlay}
       info={tempAnimalState}
     />
-  ) : (
-    ""
-  );
+  ) : ("");
+
+  const showAction = callToActionBoolean ? (
+    <AdoptionForm />) : "";
+
 
   return (
     <div className="App">
@@ -125,10 +129,11 @@ function App() {
         cancelFilter={cancelFilter}
       />
       <article className="animalGrid">{animalsMap}</article>
-      <CallToAction />
+      <CallToAction callToActionShow= {callToActionShow} callToActionBoolean= {callToActionBoolean}/>
       <Footer />
       {showLargeItem}
       {showInterestPage}
+      {showAction}
     </div>
   );
 }
