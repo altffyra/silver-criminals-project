@@ -9,6 +9,10 @@ interface Props {
 }
 
 const Animals = (props: Props) => {
+  
+let nothing:string = ""
+if (!props.info.hasOwnProperty('WellWithSmall') &&  !props.info.hasOwnProperty('WellWithLarge') &&  !props.info.hasOwnProperty('WellWithCats')  &&  !props.info.hasOwnProperty('WellWithDogs'))
+nothing = "Ingen"
 
   const isBooked: string = props.info.booked
     ? "frame bookedStamp"
@@ -39,7 +43,7 @@ const Animals = (props: Props) => {
         <section className="section__two">
           <p>Ålder: {props.info.age} år.</p>
           <p>Finns i: {props.info.location}.</p>
-          <p>Funkar med: {props.info.WellWith}.</p>
+          <p>Funkar med: {props.info.WellWithSmall} {props.info.WellWithLarge} {props.info.WellWithCats} {props.info.WellWithDogs} {nothing}.</p>
           <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
         </section>
       </div>
