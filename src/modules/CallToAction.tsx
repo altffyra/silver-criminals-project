@@ -1,6 +1,9 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  showCallToAction:any
+
+};
 
 const CallToAction = (props: Props) => {
   return (
@@ -16,7 +19,7 @@ const CallToAction = (props: Props) => {
           {" "}
           Fyll i formuläret för att lägga upp för adoption
         </h3>
-        <button className="action__btn">
+        <button onClick={props.showCallToAction} className="action__btn">
           Till formuläret{" "}
           <img
             className="action__btn__logo"

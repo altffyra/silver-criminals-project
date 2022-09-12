@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent } from "react";
+import React, { ChangeEvent, FormEvent, useRef } from "react";
 import { Animalinterface, FilterInterface } from "../modules/interfaces";
 import { SetStateAction, useState } from "react";
 interface Props {
@@ -12,14 +12,21 @@ interface Props {
 type FormType = ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>;
 
 // type FilterGenderType = "gender" | "race"
-
+// const selectInputRef = useRef();
 const Filter = (props: Props) => {
   function changeForm(e: FormType) {
     props.update(e);
   }
 
+  const onClear = () => {
+    // selectInputRef.current.select.clearValue();
+    props.cancelFilter
+  };
+
+
   return (
     <div className="outerFilterWrapper" id="search">
+
       <h2>Filtrera din sökning:</h2>
       <article className="filterSection">
         <aside className="left-form">
@@ -42,11 +49,13 @@ const Filter = (props: Props) => {
               <option value="Hund">Hund</option>
               <option value="other">Annat</option>
             </select>
+
           </div>
           <div>
             <p>Storlek:</p>
             <div className="separator"></div>
             <select name="size" onChange={(e) => changeForm(e)}>
+
               <option value="Any">Alla</option>
               <option value="Liten">Liten</option>
               <option value="Medium">Medium</option>
@@ -62,15 +71,13 @@ const Filter = (props: Props) => {
               <option value="Hona">Hona</option>
             </select>
           </div>
-
-
         </aside>
 
         <aside className="right-form">
           <div>
             <p>Bra med små barn:</p>
             <div className="separator"></div>
-            <select name="WellWith" onChange={(e) => changeForm(e)}>
+            <select name="WellWithSmall" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
               <option value="Små barn">Bra</option>
             </select>
@@ -78,7 +85,7 @@ const Filter = (props: Props) => {
           <div>
             <p>Bra med stora barn:</p>
             <div className="separator"></div>
-            <select name="WellWith" onChange={(e) => changeForm(e)}>
+            <select name="WellWithLarge" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
               <option value="Stora barn">Bra</option>
             </select>
@@ -86,7 +93,7 @@ const Filter = (props: Props) => {
           <div>
             <p>Bra med katter:</p>
             <div className="separator"></div>
-            <select name="WellWith" onChange={(e) => changeForm(e)}>
+            <select name="WellWithCats" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
               <option value="Katter">Bra</option>
             </select>
@@ -94,17 +101,20 @@ const Filter = (props: Props) => {
           <div>
             <p>Bra med hundar:</p>
             <div className="separator"></div>
-            <select name="WellWith" onChange={(e) => changeForm(e)}>
+            <select name="WellWithDogs" onChange={(e) => changeForm(e)}>
+
               <option value="Any">Ingen Preferens</option>
               <option value="Hundar">Bra</option>
             </select>
           </div>
+
         </aside>
       </article>
+
       {/* BYT FUNKTION */}
       {/* <button
         className="filter-button-cancel"
-        onClick={() => props.cancelFilter}
+        onClick={onClear}
       >
         Nollställ{" "}
         <img className="adopt__btn__logo" src="../src/assets/logo.png" alt="" />
