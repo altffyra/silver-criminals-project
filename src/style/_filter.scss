@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   font-family: Krona One;
-  width: 90%;
-  padding: 30px;
+  width: 100%;
+  padding: 1em;
 }
 
 .filterWrapper {
@@ -11,9 +11,9 @@
   display: flex;
   justify-content: center;
   font-family: Krona One;
-  margin: 4rem;
-  border-radius: 22px;
-  padding: 22px;
+  padding: 1em 0 1em 0;
+  margin: 1em 0 1em 0;
+  border-radius: 20px;
 
   input {
     height: 30px;
@@ -22,29 +22,29 @@
     font-family: Krona One;
   }
 }
-.filter-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0.5em;
-  font-size: 26px;
-  align-self: flex-end;
-  max-width: 8em;
-  max-height: 5em;
-  @include buttons;
-}
-.searchForms {
-  display: flex;
-  flex-direction: column;
-}
-.filter-button-cancel {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0.5em;
-  font-size: 26px;
-  align-self: flex-end;
-  max-width: 8em;
-  max-height: 5em;
-  @include buttons(red);
-}
+// .filter-button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-evenly;
+//   padding: 0.5em;
+//   font-size: 26px;
+//   align-self: flex-end;
+//   max-width: 8em;
+//   max-height: 5em;
+//   @include buttons;
+// }
+// .searchForms {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .filter-button-cancel {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-evenly;
+//   padding: 0.5em;
+//   font-size: 26px;
+//   align-self: flex-end;
+//   max-width: 8em;
+//   max-height: 5em;
+//   @include buttons(red);
+// }
