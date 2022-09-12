@@ -16,32 +16,47 @@ const Form = (props: Props) => {
         </button>
 
         <article className="form__card">
-          <h1 className="form__name">Intresse Anmälan {props.info.name}</h1>
+          <h1 className="form__name">Intresseanmälan {props.info.name}</h1>
 
           <form className="form">
-            <label>
-              För- och efternamn:{" "}
-              <input className="form__input" type="text"></input>{" "}
-            </label>
-            <label>
-              E-mail: <input className="form__input" type="text"></input>
-            </label>
-            <label>
-              Telefon nr: <input className="form__input" type="text"></input>
-            </label>
+            <div>
+              <label>
+                För- och efternamn:{" "}
+                <div className="separator"></div>
+                <input className="form__input" type="text"></input>{" "}
+              </label>
+            </div>
+            <div>
+              <label>
+                E-mail: 
+                <div className="separator"></div>
+                <input className="form__input" type="text"></input>
+              </label>
+            </div>
+            <div>
+              <label>
+                Telefon nr:
+                <div className="separator"></div>
+                <input className="form__input" type="text"></input>
+              </label>
+            </div>
+
+
+
           </form>
 
           <p className="info__card__about">
-            Disclaimer: Hundar Utan Hem behöver behandla dina personuppgifter
+            Disclaimer: Rescue Rabbits behöver behandla dina personuppgifter
             enligt ovan för att kunna ta ställning till din intresseanmälan och
-            för att kunna kontakta dig för att gå vidare i processen. Hundar
-            Utan Hem delar inte någon av dina personuppgifter till tredje part
+            för att kunna kontakta dig för att gå vidare i processen. Rescue Rabbit
+            delar inte någon av dina personuppgifter till tredje part
             utöver det du godkänner nedan, och du har när som helst rätt att
             återkalla ditt samtycke. Du är välkommen att kontakta oss på
-            info@hundarutanhem.se om du har några frågor. Jag godkänner Hundar
-            Utan Hems behandling av mina personuppgifter enligt ovan. Jag har
-            läst och förstått villkoren och integritetspolicyn.
-          </p>
+            info@rescuerabbits.se om du har några frågor. Jag godkänner Rescue
+            Rabbits behandling av mina personuppgifter enligt ovan.
+            <br />
+            Jag har läst och förstått villkoren och integritetspolicyn. <input type="checkbox" name="" id="" />
+          </p> 
 
           <button className="send__btn" onClick={props.adoptConfirmed}>
             Skicka intresseanmälan
