@@ -17,6 +17,7 @@
   font-weight: 900;
   font-size: 4em;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #000000;
   font-family: "Krub", sans-serif;
 }
@@ -46,11 +47,8 @@
 }
 
 .action__btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 216px;
-  height: 65px;
+  width: 200px;
+  height: 40px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
