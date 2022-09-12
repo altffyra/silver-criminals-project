@@ -11,7 +11,6 @@ import LargeInfo from "./modules/LargeInfo";
 import Form from "./modules/Form";
 import AdoptionForm from "./modules/AdoptionForm"
 import { FilterInterface } from "./modules/interfaces";
-import AdoptionForm from "./modules/AdoptionForm";
 
 function App() {
   const [showLarge, flipBoolean] = useState(false);
