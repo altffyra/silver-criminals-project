@@ -19,6 +19,7 @@
   border-radius: 20px;
   align-items: center;
   padding: 0 1em 1em 1em;
+  position: relative;
 
   .top {
     width: 100%;
@@ -61,10 +62,34 @@
       object-fit: cover;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
+
     }
+
+
+
   }
 }
 
 .separator {
   flex-grow: 1;
+}
+.bookedStamp {
+  position: relative;
+}
+.bookedStamp::after {
+  content: "";
+  display: block;
+  width: 23em;
+  height: 27em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-image: url('../assets/reserved-pngrepo-com.png');
+  background-position: center;
+  background-size: 10em 10em;
+  background-repeat: no-repeat;
+  background-color: rgba($color: #b5b5b5, $alpha: 0.5);
+
 }
