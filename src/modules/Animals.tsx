@@ -9,6 +9,7 @@ interface Props {
 }
 
 const Animals = (props: Props) => {
+
   const isBooked: string = props.info.booked
     ? "frame bookedStamp"
     : "frame";

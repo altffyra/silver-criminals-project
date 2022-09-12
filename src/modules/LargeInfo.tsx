@@ -9,9 +9,11 @@ type Props = {
 
 
 const LargeInfo = (props: Props) => {
+
   const bookedLarge: string = props.info.booked
     ? "frame bookedStampLarge"
     : "frame";
+
 
   return (
     <div className="blurr-div">
