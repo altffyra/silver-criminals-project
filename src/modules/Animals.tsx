@@ -14,6 +14,7 @@ const Animals = (props: Props) => {
     : "imageMedium";
   function readMoreFunction() {
     props.showOverlay(props.info);
+    console.log(props.info.name)
   }
 
   return (
@@ -45,7 +46,7 @@ const Animals = (props: Props) => {
 
       <div className="separator"></div>
 
-      <button className="readMore-button" onClick={readMoreFunction}>
+      <button className="readMore-button" onClick={readMoreFunction} >
         {" "}
         Läs mer!
         <img className="adopt__btn__logo" src="../src/assets/logo.png" alt="" />

@@ -18,46 +18,58 @@
     text-align: center;
     justify-content: center;
     font-family: "Krub", sans-serif;
-  }
-}
 
-.info__img {
-  width: 600px;
-  max-height: 380px;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.info__text {
-  background: #ffffff;
-  border-right: 2px solid #f680c7;
-  border-left: 2px solid #f680c7;
-  border-bottom: 2px solid #f680c7;
-  border-radius: 0px 0px 22px 22px;
-
-  .largeTop {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    .info__name {
-      font-size: 2em;
+    .img__close {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+  
+      .close {
+        position: relative;
+        top: 44px;
+        right: 10px;
+        width: 34px;
+        height: 34px;
+        border: none;
+        border-radius: 50%;
+        font-size: 22px;
+      }
     }
+    .info__img {
+      width: 40em;
+      max-height: 40em;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .info__text {
+      background: #ffffff;
+      border-right: 2px solid #f680c7;
+      border-left: 2px solid #f680c7;
+      border-bottom: 2px solid #f680c7;
+      border-radius: 0px 0px 22px 22px;
+    
+      .largeTop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+    
+        .info__name {
+          font-size: 3em;
+        }
+      }
+      .largeAnimalSpecs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.2em;
+        line-height: 1.6em;
+        gap: 0.5em;
+        text-align: left;
+        padding: 1em;
+      }
   }
-
-  .largeAnimalSpecs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 14px;
-    line-height: 1.6em;
-    gap: 0.5em;
-    text-align: left;
-    padding: 1em;
-  }
-
   .info__card__about {
     font-family: "Krub", sans-serif;
     font-style: normal;
@@ -65,44 +77,86 @@
     font-size: 14px;
     color: #000000;
     text-align: left;
-    margin: 10px;
+    margin-top: 30px;
+    padding: 1em;
   }
-}
+  .largeBottom {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    
+    .adopt__btn {
+      max-width: 15em;
+      padding: 1em;
+      text-align: center;
+      font-family: "Krub", sans-serif;
+      @include buttons;
+    
 
-.img__close {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-}
-.close {
-  position: relative;
-  top: 44px;
-  right: 10px;
-  width: 34px;
-  height: 34px;
-  border: none;
-  border-radius: 50%;
-  font-size: 22px;
-}
+    }
+  }
 
-.adopt__btn {
-  margin-top: 18px;
-  margin-bottom: 18px;
-  margin-left: 33%;
-  width: 200px;
-  height: 40px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  @include buttons;
 }
+  }
 
-.adopt__btn__logo {
-  border-radius: 300px;
-  width: 30px;
-}
+
+
+
+  .adopt__btn__logo {
+    border-radius: 300px;
+    width: 30px;
+  }
+
+
+
+
+
+
+
+
+// .info__card__specs__one {
+//   display: flex;
+//   flex-direction: column;
+//   align-content: space-around;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   width: 300px;
+//   height: 100px;
+
+//   p {
+//     font-family: "Krub", sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 22px;
+//     color: #000000;
+//     margin-right: 40px;
+//   }
+// }
+
+// .info__card__specs__two {
+//   display: flex;
+//   flex-direction: column;
+//   align-content: space-around;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   width: 300px;
+//   height: 100px;
+
+//   p {
+//     font-family: "Krub", sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 22px;
+//     color: #000000;
+//     margin-right: 40px;
+//   }
+// }
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
   .info__card {
