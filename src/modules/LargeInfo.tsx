@@ -44,16 +44,15 @@ const LargeInfo = (props: Props) => {
           </div>
 
           <p className="info__card__about">{props.info.desc}</p>
-          <section className="largeBottom">
-            <button onClick={props.switchToForm} className="adopt__btn">
-              Adoptera mig!
-              <img
-                className="adopt__btn__logo"
-                src="../src/assets/logo.png"
-                alt=""
-              />
-            </button>
-          </section>
+
+          <button onClick={props.switchToForm} className="adopt__btn">
+            Adoptera mig!
+            <img
+              className="adopt__btn__logo"
+              src="../src/assets/logo.png"
+              alt=""
+            />
+          </button>
         </article>
       </div>
     </div>
