@@ -26,63 +26,91 @@ const Filter = (props: Props) => {
 
   return (
     <div className="outerFilterWrapper" id="search">
-      <h2>Sök efter:</h2>
-      <div className="filterWrapper">
-        <div className="left-form">
-          <p>Plats</p>{" "}
-          <input
-            type="text"
-            name="Location"
-            onChange={(e) => changeForm(e)}
-          ></input>
-          <div className="searchForms">
 
-            <p>Kön</p>
-            <select name="gender" onChange={(e) => changeForm(e)}>
-
-              <option value="Any">Alla</option>
-              <option value="Hane">Hane</option>
-              <option value="Hona">Hona</option>
-            </select>
-            <p>Storlek</p>
-            <select  name="size" onChange={(e) => changeForm(e)}>
-              <option value="Any">Alla</option>
-              <option value="Liten">Liten</option>
-              <option value="Medium">Medium</option>
-              <option value="Stor">Stor</option>
-            </select>
-            <p>Typ</p>{" "}
+      <h2>Filtrera din sökning:</h2>
+      <article className="filterSection">
+        <aside className="left-form">
+          <div>
+            <p>Plats:</p>{" "}
+            <div className="separator"></div>
+            <input
+              placeholder="Ange stad"
+              type="text"
+              name="Location"
+              onChange={(e) => changeForm(e)}
+            ></input>
+          </div>
+          <div>
+            <p>Typ:</p>{" "}
+            <div className="separator"></div>
             <select name="type" onChange={(e) => changeForm(e)}>
               <option value="Any">Alla</option>
               <option value="Katt">Katt</option>
               <option value="Hund">Hund</option>
               <option value="other">Annat</option>
             </select>
+
           </div>
-        </div>
-        <div className="right-form">
-            <p>Bra med små barn</p>
+          <div>
+            <p>Storlek:</p>
+            <div className="separator"></div>
+            <select name="size" onChange={(e) => changeForm(e)}>
+
+              <option value="Any">Alla</option>
+              <option value="Liten">Liten</option>
+              <option value="Medium">Medium</option>
+              <option value="Stor">Stor</option>
+            </select>
+          </div>
+          <div>
+            <p>Kön:</p>
+            <div className="separator"></div>
+            <select name="gender" onChange={(e) => changeForm(e)}>
+              <option value="Any">Alla</option>
+              <option value="Hane">Hane</option>
+              <option value="Hona">Hona</option>
+            </select>
+          </div>
+        </aside>
+
+        <aside className="right-form">
+          <div>
+            <p>Bra med små barn:</p>
+            <div className="separator"></div>
             <select name="WellWithSmall" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
               <option value="Små barn">Bra</option>
             </select>
-            <p>Bra med stora barn</p>
+          </div>
+          <div>
+            <p>Bra med stora barn:</p>
+            <div className="separator"></div>
             <select name="WellWithLarge" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
               <option value="Stora barn">Bra</option>
             </select>
-            <p>Bra med katter</p>
+          </div>
+          <div>
+            <p>Bra med katter:</p>
+            <div className="separator"></div>
             <select name="WellWithCats" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
               <option value="Katter">Bra</option>
             </select>
-            <p>Bra med hundar</p>
+          </div>
+          <div>
+            <p>Bra med hundar:</p>
+            <div className="separator"></div>
             <select name="WellWithDogs" onChange={(e) => changeForm(e)}>
+
               <option value="Any">Ingen Preferens</option>
               <option value="Hundar">Bra</option>
             </select>
           </div>
-      </div>
+
+        </aside>
+      </article>
+
       {/* BYT FUNKTION */}
       {/* <button
         className="filter-button-cancel"

@@ -28,13 +28,11 @@
   .close {
     z-index: 2;
     position: relative;
+    background: transparent;
     top: 44px;
     right: 10px;
-    width: 34px;
-    height: 34px;
     border: none;
-    border-radius: 50%;
-    font-size: 22px;
+    font-size: 36px;
   }
 }
 
@@ -42,8 +40,8 @@
   width: 600px;
   max-height: 380px;
   object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .info__text {
@@ -54,14 +52,21 @@
   border-radius: 0px 0px 22px 22px;
 
   .largeTop {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 
     .info__name {
       font-size: 2em;
+    }
+
+    .date {
+    align-self: flex-end;
+    position: absolute;
     }
   }
 
@@ -73,6 +78,7 @@
     gap: 0.5em;
     text-align: left;
     padding: 1em;
+    justify-items: center;
   }
 
   .info__card__about {
@@ -123,8 +129,8 @@ figure {
   position: absolute;
   top: 0;
   left: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   background-image: url('../assets/reserved-pngrepo-com.png');
   background-position: center;
   background-size: 10em 10em;

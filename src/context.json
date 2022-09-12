@@ -13,6 +13,7 @@
       "age": "3",
       "booked": true,
       "picture": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*",
+
       "WellWithSmall": "Små barn" ,
       "WellWithLarge": "Stora barn",
       "WellWithCats": "Katter",
@@ -50,7 +51,8 @@
       "picture": "http://www.kattras.nu/wp-content/uploads/2017/10/helig-birma2.jpg",
       "WellWithSmall": "Små barn" ,
       "WellWithLarge": "Stora barn",
-      "desc": "Loremtext"
+      "desc": "Trött gammal kattfarbror som förlorat sin ägare. Söker nytt, kärleksfullt hem utan barn."
+
     },
 
     {
@@ -67,12 +69,12 @@
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1520366498724-709889c0c685?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "WellWithLarge": "Stora barn",
-      "desc": "Loremtext"
+      "desc": "Jelly räddades från en galen unge som tänkte spola ner henne i toaletten. Hon söker ett kärleksfullt hem där hon får vara den spralliga fisk hon är!"
     },
 
     {
       "animalId": "5",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-03-24",
       "name": "Coco ",
       "gender": "Hona",
       "type": "Hund",
@@ -85,7 +87,7 @@
       "picture": "https://images.unsplash.com/photo-1611611158876-41699b77a059?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
       "WellWithLarge": "Stora barn",
       "WellWithDogs": "Hundar",
-      "desc": "Loremtext"
+       "desc": "Coco är en egensinnig liten dam som söker ett hem utan små barn. I hennes förra hem bet hon ihjäl katten, så inga katter heller."
     },
 
     {
@@ -108,7 +110,7 @@
 
     {
       "animalId": "7",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-08-10",
       "name": "Jeff",
       "gender": "Hane",
       "type": "Katt",
@@ -127,7 +129,7 @@
 
     {
       "animalId": "8",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-08-14",
       "name": "Loco ",
       "gender": "Hane",
       "type": "Fågel",
@@ -137,7 +139,7 @@
       "energy": "1",
       "age": "15",
       "booked": false,
-      "picture": "https://images.unsplash.com/photo-1612024782955-49fae79e42bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "picture": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "WellWithLarge": "Stora barn",
       "WellWithDogs": "Hundar",
       "desc": "Loremtext"
@@ -145,7 +147,7 @@
 
     {
       "animalId": "9",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-07-30",
       "name": "Bubba",
       "gender": "Hane",
       "type": "Hund",
@@ -159,7 +161,7 @@
       "WellWithSmall": "Små barn" ,
       "WellWithLarge": "Stora barn",
       "WellWithDogs": "Hundar",
-      "desc": "Loremtext"
+      "desc": "Bubba är en ståtlg herre som älskar äventyr! Söker ett aktivt hem där han får vara med på ALLT."
     },
 
     {
