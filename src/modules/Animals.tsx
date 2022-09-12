@@ -10,16 +10,16 @@ interface Props {
 
 const Animals = (props: Props) => {
   const isBooked: string = props.info.booked
-    ? "imageBooked imageMedium"
-    : "imageMedium";
+    ? "frame bookedStamp"
+    : "frame";
   function readMoreFunction() {
     props.showOverlay(props.info);
   }
 
   return (
     <section className="animalCard">
-      <figure className="frame">
-        <img className={isBooked} src={props.info.picture}></img>
+      <figure className={isBooked}>
+        <img className="imageMedium" src={props.info.picture}></img>
       </figure>
       <div className="top">
         <h1 className="animalName">{props.info.name}</h1>
