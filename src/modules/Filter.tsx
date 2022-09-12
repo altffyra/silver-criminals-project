@@ -30,7 +30,7 @@ const Filter = (props: Props) => {
             onChange={(e) => changeForm(e)}
           ></input>
           <div className="searchForms">
-            <p>Gender</p>
+            <p>Kön</p>
             <select name="gender" onChange={(e) => changeForm(e)}>
               <option value="Any">Alla</option>
               <option value="Hane">Hane</option>
