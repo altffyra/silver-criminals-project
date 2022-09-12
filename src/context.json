@@ -11,7 +11,7 @@
       "location": "Stockholm",
       "energy": "2",
       "age": "3",
-      "booked": false,
+      "booked": true,
       "picture": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*",
       "WellWith": ["Små barn, ", "stora barn, ", "katter "],
       "desc": "Loremtext"
@@ -79,7 +79,7 @@
       "location": "Lund",
       "energy": "3",
       "age": "3",
-      "booked": false,
+      "booked": true,
       "picture": "https://images.unsplash.com/photo-1611611158876-41699b77a059?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
       "WellWith": ["Stora barn, ", "hundar "],
       "desc": "Loremtext"
