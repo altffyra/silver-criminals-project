@@ -8,6 +8,9 @@ type Props = {
 };
 
 const LargeInfo = (props: Props) => {
+
+
+
   return (
     <div className="blurr-div">
       <div className="info__card">

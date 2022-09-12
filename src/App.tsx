@@ -16,12 +16,11 @@ function App() {
   const [showInterest, flipInterest] = useState(false);
   const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
   const [tempAnimalState, setTempAnimal] = useState<Animalinterface>(
-    animals[0]
-  );
-  const [adopted, setAdopted] = useState<Adopted[]>();
+    animals[0]);
+  const [adopted, setAdopted] = useState<Adopted[]>([]);
   const [filter, setFilter] = useState<FilterInterface | any>({});
   const [filteredAnimal, setFiltered] = useState<Animalinterface[]>(animals);
-  let tempArray: [] = [];
+  let tempArray: Animalinterface[] = [];
   // adopted( animalID, Namn ,Telefonnummer, E-post )
 
   function showOverlay(temp: SetStateAction<Animalinterface>) {
@@ -34,17 +33,31 @@ function App() {
     flipInterest(!showInterest);
   }
 
-  function adoptConfirmed(adoptedAnimal: SetStateAction<Adopted>) {
-    // let Temparray = [...adopted, adoptedAnimal]
-    // setAdopted(Temparray)
-    flipBoolean(!showInterest);
+  function adoptConfirmed(adoptedAnimal:Adopted) {
+    let TempAdopted = []
+    
+    for (let index = 0; index < animalsState.length; index++) {
+      const singleAnimal = animalsState[index];
+      if (singleAnimal.name == adoptedAnimal.animalName)
+      {let tempAnimalArray = [...animalsState]
+      tempAnimalArray[index].booked= true
+      setAnimal(tempAnimalArray)
+      console.log(animalsState)
+      }
+    }
+    TempAdopted = [...adopted, adoptedAnimal]
+    setAdopted(TempAdopted) 
+    flipInterest(!showInterest);
+    alert("Du är nu bokad för " + adoptedAnimal.animalName)
+    console.log(adopted)
+  
   }
   function cancelFilter() {
-    filteredAnimal(animals);
+    setFiltered(animals);
     tempArray = [];
   }
-
   function timeToUpdate(e: any, filterArguments: Animalinterface) {
+    console.log(tempArray);
     if (e.target.value == "Any") {
       const prop = e.target.name;
       delete filter[prop];
