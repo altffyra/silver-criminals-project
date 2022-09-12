@@ -76,7 +76,7 @@ const Filter = (props: Props) => {
         </div>
       </div>
       {/* BYT FUNKTION */}
-      <button
+      {/* <button
         className="filter-button-cancel"
         onClick={() => props.cancelFilter}
       >
@@ -86,7 +86,7 @@ const Filter = (props: Props) => {
       <button className="filter-button">
         Sök!{" "}
         <img className="adopt__btn__logo" src="../src/assets/logo.png" alt="" />
-      </button>
+      </button> */}
     </div>
   );
 };
