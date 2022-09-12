@@ -13,7 +13,9 @@
       "age": "3",
       "booked": true,
       "picture": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*",
-      "WellWith": ["Små barn, ", "stora barn, ", "katter "],
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithCats": "Katter",
       "desc": "Loremtext"
     },
 
@@ -30,7 +32,6 @@
       "age": "1",
       "booked": false,
       "picture": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_from_Gatil_Ragbelas.jpg",
-      "WellWith": [" "],
       "desc": "Loremtext"
     },
 
@@ -47,7 +48,8 @@
       "age": "10",
       "booked": false,
       "picture": "http://www.kattras.nu/wp-content/uploads/2017/10/helig-birma2.jpg",
-      "WellWith": ["Små barn, ", "stora barn "],
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
       "desc": "Loremtext"
     },
 
@@ -64,7 +66,7 @@
       "age": "10",
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1520366498724-709889c0c685?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "WellWith": ["Stora barn "],
+      "WellWithLarge": "Stora barn",
       "desc": "Loremtext"
     },
 
@@ -81,7 +83,8 @@
       "age": "3",
       "booked": true,
       "picture": "https://images.unsplash.com/photo-1611611158876-41699b77a059?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
-      "WellWith": ["Stora barn, ", "hundar "],
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
       "desc": "Loremtext"
     },
 
@@ -98,7 +101,8 @@
       "age": "2",
       "booked": true,
       "picture": "https://www.katterian.se/wp-content/uploads/2013/09/brittisk-korth%C3%A5r.jpg",
-      "WellWith": ["Små barn, ", "stora barn "],
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
       "desc": "Loremtext"
     },
 
@@ -115,7 +119,9 @@
       "age": "0",
       "booked": false,
       "picture": "https://www.kattras.nu/wp-content/uploads/2017/10/bengal-kattunge.jpg",
-      "WellWith": ["Små barn, ", "stora barn, ", "hundar "],
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
       "desc": "Loremtext"
     },
 
@@ -132,7 +138,8 @@
       "age": "15",
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1612024782955-49fae79e42bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "WellWith": ["Stora barn, ", "hundar "],
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
       "desc": "Loremtext"
     },
 
@@ -149,7 +156,9 @@
       "age": "5",
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1568033951564-914f351989a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-      "WellWith": ["Små barn, ", "stora barn, ", "hundar "],
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
       "desc": "Loremtext"
     },
 
@@ -166,7 +175,7 @@
       "age": "1",
       "booked": true,
       "picture": "https://images.unsplash.com/photo-1584553421349-3557471bed79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1146&q=80",
-      "WellWith": ["Stora barn "],
+      "WellWithLarge": "Stora barn",
       "desc": "Loremtext"
     },
 
@@ -183,7 +192,8 @@
       "age": "6",
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1621951714307-0f9b8070a9b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
-      "WellWith": ["Stora barn, ", "hundar "],
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
       "desc": "Loremtext"
     }
   ]

@@ -9,42 +9,74 @@ import { animals } from "./context.json";
 import { Animalinterface, Adopted } from "./modules/interfaces";
 import LargeInfo from "./modules/LargeInfo";
 import Form from "./modules/Form";
+import AdoptionForm from "./modules/AdoptionForm";
 import { FilterInterface } from "./modules/interfaces";
 
 function App() {
+  //stor info flip
   const [showLarge, flipBoolean] = useState(false);
+  //vidare efter stor info
   const [showInterest, flipInterest] = useState(false);
+  
+  // CTA blocket
+  const [callToActionBoolean, callToActionShow] = useState(false);
+  //alla djur
   const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
+  // temporära djur som läggs i stor info
   const [tempAnimalState, setTempAnimal] = useState<Animalinterface>(
     animals[0]
   );
-  const [adopted, setAdopted] = useState<Adopted[]>();
+    // adopted( animalID, Namn ,Telefonnummer, E-post )
+  const [adopted, setAdopted] = useState<Adopted[]>([]);
+   // filter state för filterfunktion
   const [filter, setFilter] = useState<FilterInterface | any>({});
+  // utfiltrerade Djur som mappas ut i fyrkanterna
   const [filteredAnimal, setFiltered] = useState<Animalinterface[]>(animals);
-  let tempArray: [] = [];
-  // adopted( animalID, Namn ,Telefonnummer, E-post )
+  // temporär array som används vid filter
+  let tempArray: Animalinterface[] = [];
 
+
+// visar stor info
   function showOverlay(temp: SetStateAction<Animalinterface>) {
     setTempAnimal(temp);
     flipBoolean(!showLarge);
   }
-
+// tar bort stor info och visar boknings sidan
   function switchToForm() {
     flipBoolean(!showLarge);
     flipInterest(!showInterest);
   }
 
-  function adoptConfirmed(adoptedAnimal: SetStateAction<Adopted>) {
-    // let Temparray = [...adopted, adoptedAnimal]
-    // setAdopted(Temparray)
-    flipBoolean(!showInterest);
-  }
-  function cancelFilter() {
-    filteredAnimal(animals);
-    tempArray = [];
+  function showCallToAction(){
+    console.log("lol")
+    callToActionShow(!callToActionBoolean)
+  
   }
 
+  function adoptConfirmed(adoptedAnimal: Adopted) {
+    let TempAdopted = [];
+
+    for (let index = 0; index < animalsState.length; index++) {
+      const singleAnimal = animalsState[index];
+      if (singleAnimal.name == adoptedAnimal.animalName) {
+        let tempAnimalArray = [...animalsState];
+        tempAnimalArray[index].booked = true;
+        setAnimal(tempAnimalArray);
+        console.log(animalsState);
+      }
+    }
+    TempAdopted = [...adopted, adoptedAnimal];
+    setAdopted(TempAdopted);
+    flipInterest(!showInterest);
+    alert("Du är nu bokad för " + adoptedAnimal.animalName);
+    console.log(adopted);
+  }
+  function cancelFilter() {
+    setFiltered(animals);
+    tempArray = [];
+  }
   function timeToUpdate(e: any, filterArguments: Animalinterface) {
+    console.log(tempArray);
     if (e.target.value == "Any") {
       const prop = e.target.name;
       delete filter[prop];
@@ -55,7 +87,6 @@ function App() {
         [e.target.name]: e.target.value,
       });
     }
-
     for (let index = 0; index < animalsState.length; index++) {
       const singleCompareAnimal: Animalinterface = animalsState[index];
       let test = Object.entries(filter).every(
@@ -98,6 +129,8 @@ function App() {
   ) : (
     ""
   );
+ ///// FIXA SEN INGET STÄMMER
+  const showAction = callToActionBoolean ? (<AdoptionForm showOverlay = {showCallToAction}/>) : "";
 
   return (
     <div className="App">
@@ -111,10 +144,13 @@ function App() {
         cancelFilter={cancelFilter}
       />
       <article className="animalGrid">{animalsMap}</article>
-      <CallToAction />
+      <CallToAction
+      showCallToAction = {showCallToAction}
+      />
       <Footer />
       {showLargeItem}
       {showInterestPage}
+      {showAction}
     </div>
   );
 }
