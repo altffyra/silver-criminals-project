@@ -28,8 +28,17 @@
   border-radius: 22px;
 }
 
+
+.adopt__input__lines{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+justify-content: space-between;
+width: 394px;
+margin-bottom: 2px;
+}
 .divider{
-  margin: 20px;
+  margin: 16px;
   background-color: #F680C7;
   border: 1px solid white;
 }

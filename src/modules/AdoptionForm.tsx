@@ -18,7 +18,7 @@ const AdoptionForm = (props: Props) => {
         <article className="adopt__card">
           <form className="adopt__form">
             <section className="adopt__user">
-              <label>
+              <label className="adopt__input__lines">
                 Din För- och efternamn:
                 <input
                   name="userName"
@@ -27,7 +27,7 @@ const AdoptionForm = (props: Props) => {
                 ></input>
               </label>
 
-              <label>
+              <label className="adopt__input__lines">
                 E-mail:
                 <input
                   name="userEmail"
@@ -36,7 +36,7 @@ const AdoptionForm = (props: Props) => {
                 ></input>
               </label>
 
-              <label>
+              <label className="adopt__input__lines">
                 Telefon nr:
                 <input
                   name="userPhone"
@@ -48,7 +48,7 @@ const AdoptionForm = (props: Props) => {
 
             <section className="divider"></section>
 
-            <label>
+            <label className="adopt__input__lines">
               Djurets namn:
               <input
                 name="userPhone"
@@ -57,9 +57,9 @@ const AdoptionForm = (props: Props) => {
               ></input>
             </label>
 
-            <label>
+            <label className="adopt__input__lines">
               Plats:
-              <input className="adopt__input" name="Location"></input>
+              <input className="adopt__input" name="Location" ></input>
             </label>
 
             <section className="adopt__wrapper">
