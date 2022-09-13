@@ -136,7 +136,7 @@ function App() {
   );
 
   const showThank = showThankYou ? (
-    <ThankYou close= {showThankYouPage}/>
+    <ThankYou info={adopted} close= {showThankYouPage}/>
   ) : (
     ""
   );

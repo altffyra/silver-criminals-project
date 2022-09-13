@@ -27,12 +27,7 @@
 
   .close {
     z-index: 2;
-    position: relative;
-    background: transparent;
-    top: 44px;
-    right: 10px;
-    border: none;
-    font-size: 36px;
+    @include closeButton;
   }
 }
 
@@ -61,7 +56,7 @@
     padding-right: 20px;
 
     .info__name {
-      font-size: 2em;
+      font-size: 3em;
     }
 
     .date {
