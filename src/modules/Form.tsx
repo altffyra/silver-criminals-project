@@ -21,7 +21,7 @@ const Form = (props: Props) => {
       [e.target.name]: e.target.value,
     animalId: props.info.animalId,
   animalName: props.info.name})
-  console.log(formDetails)
+
   }
 
  function confirmAdoption(){
@@ -30,7 +30,6 @@ const Form = (props: Props) => {
   changeDetails(defaultAnimal)
   }
   else alert("Vänligen fyll i alla fält.")
-  console.log(formDetails)
  }
 
 

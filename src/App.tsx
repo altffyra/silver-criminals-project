@@ -59,14 +59,12 @@ function App() {
 
   function adoptConfirmed(adoptedAnimal: Adopted) {
     let TempAdopted = [];
-    console.log("lol")
     for (let index = 0; index < animalsState.length; index++) {
       const singleAnimal = animalsState[index];
       if (singleAnimal.name == adoptedAnimal.animalName) {
         let tempAnimalArray = [...animalsState];
         tempAnimalArray[index].booked = true;
         setAnimal(tempAnimalArray);
-        console.log(singleAnimal, tempAnimalArray)
       }
     }
     TempAdopted = [...adopted, adoptedAnimal];
@@ -101,8 +99,6 @@ function App() {
     }
     setFilter(filterTemp)
     setFiltered(tempArray);
-    console.log(tempArray)
-  
   }
 
   const animalsMap = filteredAnimal.map((animal, index) => {
