@@ -4,9 +4,12 @@
   display: flex;
   justify-content: center;
   position: relative;
+  width: 100%;
 
   .heroImg {
     width: 100%;
+    height: 800px;
+    object-fit: cover;
     padding: 1em;
     border-radius: 30px;
   }
@@ -15,15 +18,16 @@
     font-family: "Krub", sans-serif;
     display: flex;
     flex-direction: column;
-    width: 26em;
+    justify-content: space-between;
+    width: 36em;
     height: 15.5em;
     position: absolute;
-    background-color: #ffe1e1;
-    border-radius: 20px;
-    padding: 1em;
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 22px;
     top: 3em;
     left: 3em;
     padding: 1.5em;
+    margin: 1.5em;
 
     .heroText {
       font-family: "Krona One", sans-serif;
@@ -36,8 +40,8 @@
       padding: 0.5em;
       font-size: 26px;
       align-self: flex-end;
-      max-width: 8em;
-      max-height: 5em;
+      width: 8em;
+      height: 2em;
       @include buttons;
 
       a {
