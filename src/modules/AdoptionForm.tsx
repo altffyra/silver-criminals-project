@@ -2,7 +2,6 @@ import React from "react";
 import { Animalinterface } from "./interfaces";
 
 type Props = {
-  info: Animalinterface;
   showOverlay: any;
   switchToAdoption: any;
 };
