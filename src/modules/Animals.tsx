@@ -42,7 +42,7 @@ nothing = "Ingen"
         <section className="section__two">
           <p>Ålder: {props.info.age} år.</p>
           <p>Finns i: {props.info.location}.</p>
-          <p>Funkar med: {props.info.WellWithSmall} {props.info.WellWithLarge} {props.info.WellWithCats} {props.info.WellWithDogs} {nothing}.</p>
+          <p>Funkar med: {props.info.WellWithSmall} {props.info.WellWithLarge} {props.info.WellWithCats} {props.info.WellWithDogs} {nothing}</p>
           <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
         </section>
       </div>
