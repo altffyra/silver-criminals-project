@@ -3,8 +3,6 @@ import { Adopted, Animalinterface } from '../modules/interfaces'
 
 type Props = {
   close: any
-  info: Adopted;
-
 }
 
 const ThankYou = (props: Props) => {
@@ -13,8 +11,7 @@ const ThankYou = (props: Props) => {
 
         <div className='small_thanks'>
             <p>
-              Tack för din anmälan, {props.info.userName}! <br />
-              {props.info.animalName} är nu reserverad tillsvidare.
+              Tack för din anmälan djuret är nu reserverad tillsvidare.
               Vi återkommer till dig inom 5 arbetsdagar.
             </p>
             <div className='separator'></div>

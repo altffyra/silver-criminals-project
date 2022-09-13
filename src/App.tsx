@@ -102,6 +102,7 @@ function App() {
     }
     setFilter(filterTemp)
     setFiltered(tempArray);
+    console.log(tempArray)
   
   }
 
@@ -135,7 +136,7 @@ function App() {
   );
 
   const showThank = showThankYou ? (
-    <ThankYou info={adopted} close= {showThankYouPage}/>
+    <ThankYou close= {showThankYouPage}/>
   ) : (
     ""
   );
