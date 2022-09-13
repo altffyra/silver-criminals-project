@@ -29,12 +29,10 @@
 }
 
 .divider{
-  width: 600px;
-  height: 15px;
-  color: #F680C7;
+  margin: 20px;
   background-color: #F680C7;
+  border: 1px solid white;
 }
-
 .adopt__wrapper{
   display: flex;
 flex-direction: row;
@@ -70,6 +68,10 @@ border: 1px solid #F680C7;
 border-radius: 22px;
 }
 
+.adopt__about__animal{
+  display: flex;
+  flex-direction: column;
+}
 
 .options{
 min-width: 80px;
@@ -111,9 +113,12 @@ margin-left: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  color: #000000;
   text-align: left;
   margin-bottom: 10px;
+height: 130px;
+background: #FFFFFF;
+border: 1px solid #F680C7;
+border-radius: 22px;
 }
 
 .adopt__close {
@@ -132,20 +137,20 @@ margin-left: 10px;
     font-size: 22px;
   }
 
-.adopt__btn {
-  margin-top: 30px;
-  width: 140px;
-  height: 40px;
+.adopting__btn{
+  margin-top: 423px;
+  width: 227px;
+  height: 45px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   text-align: center;
   font-family: "Krub", sans-serif;
   @include buttons;
 }
 
-.adopt__btn__logo {
+.adopting__btn__logo {
   border-radius: 300px;
   width: 30px;
 }
