@@ -50,21 +50,21 @@ const Form = (props: Props) => {
               <label>
                 För- och efternamn:{" "}
                 <div className="separator"></div>
-                <input className="form__input" type="text"></input>{" "}
+                <input onChange={(e)=> sendForm(e)} name="userName" className="form__input" type="text"></input>{" "}
               </label>
             </div>
             <div>
               <label>
                 E-mail: 
                 <div className="separator"></div>
-                <input className="form__input" type="text"></input>
+                <input onChange={(e)=> sendForm(e)} name="userEmail" className="form__input" type="text"></input>
               </label>
             </div>
             <div>
               <label>
                 Telefon nr:
                 <div className="separator"></div>
-                <input className="form__input" type="text"></input>
+                <input onChange={(e)=> sendForm(e)} name="userPhone" className="form__input" type="text"></input>
               </label>
             </div>
           </form>

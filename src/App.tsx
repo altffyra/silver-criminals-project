@@ -11,13 +11,15 @@ import LargeInfo from "./modules/LargeInfo";
 import Form from "./modules/Form";
 import AdoptionForm from "./modules/AdoptionForm";
 import { FilterInterface } from "./modules/interfaces";
+import ThankYou from "./modules/ThankYou";
 
 function App() {
   //stor info flip
   const [showLarge, flipBoolean] = useState(false);
   //vidare efter stor info
   const [showInterest, flipInterest] = useState(false);
-  
+  const [showThankYou, flipThankYou]= useState(false)
+
   // CTA blocket
   const [callToActionBoolean, callToActionShow] = useState(false);
   //alla djur
@@ -33,6 +35,8 @@ function App() {
   // utfiltrerade Djur som mappas ut i fyrkanterna
   const [filteredAnimal, setFiltered] = useState<Animalinterface[]>(animals);
   // temporär array som används vid filter
+
+
   let tempArray: Animalinterface[] = [];
 
 
@@ -48,9 +52,11 @@ function App() {
   }
 
   function showCallToAction(){
-    console.log("lol")
     callToActionShow(!callToActionBoolean)
-  
+  }
+
+  function showThankYouPage(){
+    flipThankYou(!showThankYou);
   }
 
   function adoptConfirmed(adoptedAnimal: Adopted) {
@@ -68,8 +74,7 @@ function App() {
     TempAdopted = [...adopted, adoptedAnimal];
     setAdopted(TempAdopted);
     flipInterest(!showInterest);
-    alert("Du är nu bokad för " + adoptedAnimal.animalName);
-    console.log(adopted);
+    showThankYouPage();
   }
   function cancelFilter() {
     setFiltered(animals);
@@ -129,7 +134,13 @@ function App() {
   ) : (
     ""
   );
- ///// FIXA SEN INGET STÄMMER
+
+  const showThank = showThankYou ? (
+    <ThankYou close= {showThankYouPage}/>
+  ) : (
+    ""
+  );
+
   const showAction = callToActionBoolean ? (<AdoptionForm showOverlay = {showCallToAction}/>) : "";
 
   return (
@@ -151,6 +162,7 @@ function App() {
       {showLargeItem}
       {showInterestPage}
       {showAction}
+      {showThank}
     </div>
   );
 }
