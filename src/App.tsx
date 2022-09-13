@@ -78,7 +78,7 @@ function App() {
 
   function timeToUpdate(e:any) {
     let filterTemp
-    if (e.target.value == "Any") {
+    if (e.target.value == "Any" || e.target.value == "" ) {
       const prop = e.target.name;
       const tempDelete = {...filter} 
       delete tempDelete[prop];
