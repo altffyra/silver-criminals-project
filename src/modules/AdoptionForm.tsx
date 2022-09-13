@@ -2,8 +2,8 @@ import React from "react";
 import { Animalinterface } from "./interfaces";
 
 type Props = {
-  showOverlay: ()=> void;
-  switchToAdoption: ()=> void;
+  showOverlay: () => void;
+  switchToAdoption: () => void;
 };
 
 const AdoptionForm = (props: Props) => {
@@ -58,7 +58,7 @@ const AdoptionForm = (props: Props) => {
 
             <label className="adopt__input__lines">
               Plats:
-              <input className="adopt__input" name="Location" ></input>
+              <input className="adopt__input" name="Location"></input>
             </label>
 
             <section className="adopt__wrapper">
@@ -70,7 +70,9 @@ const AdoptionForm = (props: Props) => {
                 <label className="adopt__animal">
                   kön:
                   <select className="options" name="gender">
-                    <option value="Any">Alla</option>
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
                     <option value="Hane">Hane</option>
                     <option value="Hona">Hona</option>
                   </select>
@@ -79,7 +81,9 @@ const AdoptionForm = (props: Props) => {
                 <label className="adopt__animal">
                   Storlek:
                   <select className="options" name="size">
-                    <option value="alla">Alla</option>
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
                     <option value="Liten">Liten</option>
                     <option value="Medium">Medium</option>
                     <option value="Stor">Stor</option>
@@ -89,34 +93,62 @@ const AdoptionForm = (props: Props) => {
                 <label className="adopt__animal">
                   Typ:
                   <select className="options" name="type">
-                    <option value="Any">Alla</option>
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
                     <option value="Katt">Katt</option>
                     <option value="Hund">Hund</option>
-                    <option value="other">Annat</option>
+                    <option value="Fågel">Fågel</option>
+                    <option value="Gnagare">Gnagare</option>
+                    <option value="Fisk">Fisk</option>
                   </select>
                 </label>
 
                 <label className="adopt__animal">
                   Ras
                   <select className="options" name="Race">
-                    <option value="Any">Alla</option>
-                    <option value="option 2">2</option>
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
+                    <option value="option 1">01</option>
+                    <option value="option 2">02</option>
+                    <option value="option 3">03</option>
+                    <option value="option 4">04</option>
+                    <option value="option 5">05</option>
+                    <option value="option 6">06</option>
+                    <option value="option 7">07</option>
                   </select>
                 </label>
 
                 <label className="adopt__animal">
                   Energi:
                   <select className="options" name="Energy">
-                    <option value="Any">Alla</option>
-                    <option value="option 2">2</option>
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
+                    <option value="option 1">01</option>
+                    <option value="option 2">02</option>
+                    <option value="option 3">03</option>
+                    <option value="option 4">04</option>
+                    <option value="option 5">05</option>
+                    <option value="option 6">06</option>
+                    <option value="option 7">07</option>
                   </select>
                 </label>
 
                 <label className="adopt__animal">
                   Ålder:
                   <select className="options" name="Old">
-                    <option value="Any">Alla</option>
-                    <option value="option 2">2</option>
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
+                    <option value="option 1">01</option>
+                    <option value="option 2">02</option>
+                    <option value="option 3">03</option>
+                    <option value="option 4">04</option>
+                    <option value="option 5">05</option>
+                    <option value="option 6">06</option>
+                    <option value="option 7">07</option>
                   </select>
                 </label>
               </section>
@@ -125,6 +157,9 @@ const AdoptionForm = (props: Props) => {
                 <label className="adopt__specs">
                   Bra med små barn:
                   <select className="options" name="WellWithSmall">
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
                     <option value="Any">Ingen Preferens</option>
                     <option value="Små barn">Bra</option>
                   </select>
@@ -133,6 +168,9 @@ const AdoptionForm = (props: Props) => {
                 <label className="adopt__specs">
                   Bra med stora barn:
                   <select className="options" name="WellWithLarge">
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
                     <option value="Any">Ingen Preferens</option>
                     <option value="Stora barn">Bra</option>
                   </select>
@@ -141,6 +179,9 @@ const AdoptionForm = (props: Props) => {
                 <label className="adopt__specs">
                   Bra med katter:
                   <select className="options" name="WellWithCats">
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
                     <option value="Any">Ingen Preferens</option>
                     <option value="Katter">Bra</option>
                   </select>
@@ -149,6 +190,9 @@ const AdoptionForm = (props: Props) => {
                 <label className="adopt__specs">
                   Bra med hundar:
                   <select className="options" name="WellWithDogs">
+                    <option value="Pick" hidden>
+                      Välj
+                    </option>
                     <option value="Any">Ingen Preferens</option>
                     <option value="Hundar">Bra</option>
                   </select>
@@ -158,27 +202,18 @@ const AdoptionForm = (props: Props) => {
 
             <label className="adopt__about__animal">
               Lite om djuret:
-              <textarea
-                name="userPhone"
-                className="adopt__about"
-              ></textarea>
-
-
+              <textarea name="userPhone" className="adopt__about"></textarea>
             </label>
-
-
           </form>
           <button onClick={props.switchToAdoption} className="adopting__btn">
-          Skicka anmälan
-                        <img
-                className="adopting__btn__logo"
-                src="../src/assets/logo.png"
-                alt=""
-              />
-            </button>
-
+            Skicka anmälan
+            <img
+              className="adopting__btn__logo"
+              src="../src/assets/logo.png"
+              alt=""
+            />
+          </button>
         </article>
-
       </div>
     </div>
   );

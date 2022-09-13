@@ -28,21 +28,22 @@
   border-radius: 22px;
 }
 
-
-.adopt__input__lines{
+.adopt__input__lines {
   display: flex;
   flex-direction: row;
   align-items: center;
-justify-content: space-between;
-width: 394px;
-margin-bottom: 2px;
+  justify-content: space-between;
+  width: 394px;
+  margin-bottom: 2px;
 }
-.divider{
+
+.divider {
   margin: 16px;
-  background-color: #F680C7;
+  background-color: #f680c7;
   border: 1px solid white;
 }
-.adopt__wrapper{
+
+.adopt__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,43 +51,47 @@ margin-bottom: 2px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.adopt__user{
+
+.adopt__user {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.adopt__animal{
+
+.adopt__animal {
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: space-between;
   justify-content: space-between;
 }
-.adopt__specs{
+
+.adopt__specs {
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: space-between;
   justify-content: space-between;
 }
-.adopt__img{
+
+.adopt__img {
   width: 140px;
   height: 200px;
-  background: #FFFFFF;
-  border: 1px solid #F680C7;
+  background: #ffffff;
+  border: 1px solid #f680c7;
   border-radius: 22px;
-  }
+}
 
-.adopt__about__animal{
+.adopt__about__animal {
   display: flex;
   flex-direction: column;
 }
 
-.options{
+.options {
   min-width: 80px;
   height: 26px;
-  background: #FFFFFF;
-  border: 1px solid #F680C7;
+  background: #ffffff;
+  border: 1px solid #f680c7;
   border-radius: 22px;
   text-align: center;
   font-family: "Krub", sans-serif;
@@ -124,30 +129,22 @@ margin-bottom: 2px;
   font-size: 1em;
   text-align: left;
   margin-bottom: 10px;
-height: 130px;
-background: #FFFFFF;
-border: 1px solid #F680C7;
-border-radius: 22px;
+  height: 130px;
+  background: #ffffff;
+  border: 1px solid #f680c7;
+  border-radius: 22px;
 }
 
 .adopt__close {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-  }
-  .close {
-    @include closeButton;
-    // position: relative;
-    // top: 44px;
-    // right: 10px;
-    // width: 34px;
-    // height: 34px;
-    // border: none;
-    // border-radius: 50%;
-    // font-size: 36px;
-  }
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.close {
+  @include closeButton;
+}
 
-.adopting__btn{
+.adopting__btn {
   margin-top: 423px;
   width: 227px;
   height: 45px;
