@@ -2,8 +2,8 @@ import React from "react";
 import { Animalinterface } from "./interfaces";
 
 type Props = {
-  showOverlay: any;
-  switchToAdoption: any;
+  showOverlay: ()=> void;
+  switchToAdoption: ()=> void;
 };
 
 const AdoptionForm = (props: Props) => {

@@ -4,8 +4,6 @@ import { SetStateAction, useState } from "react";
 interface Props {
   info: Animalinterface[];
   update: (e:FormType)=> void;
-  filter: FilterInterface;
-  setFilter: ()=> void;
 }
 
 type FormType = ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>;
@@ -31,7 +29,7 @@ const Filter = (props: Props) => {
             <input
               placeholder="Ange stad"
               type="text"
-              name="Location"
+              name="location"
               onChange={(e) => changeForm(e)}
             ></input>
           </div>

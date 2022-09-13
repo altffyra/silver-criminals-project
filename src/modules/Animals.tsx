@@ -3,9 +3,8 @@ import { Animalinterface } from "../modules/interfaces";
 
 interface Props {
   info: Animalinterface;
-  update: any;
   index: number;
-  showOverlay: any;
+  showOverlay: ({})=> void;
 }
 
 const Animals = (props: Props) => {

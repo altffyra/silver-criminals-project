@@ -25,7 +25,7 @@ function App() {
   //alla djur
   const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
   // temporära djur som läggs i stor info
-  const [tempAnimalState, setTempAnimal] = useState<Animalinterface>(
+  const [tempAnimalState, setTempAnimal] = useState(
     animals[0]
   );
     // adopted( animalID, Namn ,Telefonnummer, E-post )
@@ -41,7 +41,7 @@ function App() {
 
 
 // visar stor info
-  function showOverlay(temp: SetStateAction<Animalinterface>) {
+  function showOverlay(temp:any) {
     setTempAnimal(temp);
     flipBoolean(!showLarge);
   }
@@ -76,7 +76,7 @@ function App() {
     showThankYouPage();
   }
 
-  function timeToUpdate(e: any, filterArguments: Animalinterface) {
+  function timeToUpdate(e:any) {
     let filterTemp
     if (e.target.value == "Any") {
       const prop = e.target.name;
@@ -110,7 +110,6 @@ function App() {
       <Animals
         showOverlay={showOverlay}
         info={animal}
-        update={timeToUpdate}
         index={index}
         key={index}
       />
@@ -150,8 +149,6 @@ function App() {
       <Filter
         info={animalsState}
         update={timeToUpdate}
-        filter={filter}
-        setFilter={setFilter}
       />
       <article className="animalGrid">{animalsMap}</article>
       <CallToAction
