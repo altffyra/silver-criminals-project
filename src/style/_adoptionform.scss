@@ -44,38 +44,38 @@ margin-bottom: 2px;
 }
 .adopt__wrapper{
   display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
-margin-top: 20px;
-margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .adopt__user{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .adopt__animal{
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: space-between;
-justify-content: space-between;
+  justify-content: space-between;
 }
 .adopt__specs{
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: space-between;
-justify-content: space-between;
+  justify-content: space-between;
 }
 .adopt__img{
-width: 140px;
-height: 200px;
-background: #FFFFFF;
-border: 1px solid #F680C7;
-border-radius: 22px;
-}
+  width: 140px;
+  height: 200px;
+  background: #FFFFFF;
+  border: 1px solid #F680C7;
+  border-radius: 22px;
+  }
 
 .adopt__about__animal{
   display: flex;
@@ -83,18 +83,18 @@ border-radius: 22px;
 }
 
 .options{
-min-width: 80px;
-height: 26px;
-background: #FFFFFF;
-border: 1px solid #F680C7;
-border-radius: 22px;
-text-align: center;
-font-family: "Krub", sans-serif;
-font-weight: 400;
-font-size: 16px;
-padding-left: 10px;
-padding-right: 10px;
-margin-left: 10px;
+  min-width: 80px;
+  height: 26px;
+  background: #FFFFFF;
+  border: 1px solid #F680C7;
+  border-radius: 22px;
+  text-align: center;
+  font-family: "Krub", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
 }
 
 .adopt__form {
@@ -136,14 +136,15 @@ border-radius: 22px;
     flex-direction: column;
   }
   .close {
-    position: relative;
-    top: 44px;
-    right: 10px;
-    width: 34px;
-    height: 34px;
-    border: none;
-    border-radius: 50%;
-    font-size: 22px;
+    @include closeButton;
+    // position: relative;
+    // top: 44px;
+    // right: 10px;
+    // width: 34px;
+    // height: 34px;
+    // border: none;
+    // border-radius: 50%;
+    // font-size: 36px;
   }
 
 .adopting__btn{

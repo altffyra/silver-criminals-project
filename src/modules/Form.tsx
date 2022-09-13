@@ -1,5 +1,4 @@
 import React, { ChangeEvent, SetStateAction, useState } from "react";
-import { warning } from "react-router/lib/router";
 import { Animalinterface, Adopted } from "./interfaces";
 
 type Props = {

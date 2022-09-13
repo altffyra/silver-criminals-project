@@ -82,12 +82,7 @@
   flex-direction: column;
 }
 .close {
-  background: transparent;
-  position: relative;
-  top: 44px;
-  right: 10px;
-  border: none;
-  font-size: 36px;
+  @include closeButton;
 }
 
 .send__btn {
