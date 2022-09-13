@@ -25,9 +25,7 @@ function App() {
   //alla djur
   const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
   // temporära djur som läggs i stor info
-  const [tempAnimalState, setTempAnimal] = useState(
-    animals[0]
-  );
+  const [tempAnimalState, setTempAnimal] = useState(animals[0]);
     // adopted( animalID, Namn ,Telefonnummer, E-post )
   const [adopted, setAdopted] = useState<Adopted[]>([]);
    // filter state för filterfunktion
@@ -47,7 +45,7 @@ function App() {
   }
 // tar bort stor info och visar boknings sidan
   function switchToForm() {
-    flipBoolean(!showLarge);
+    // flipBoolean(!showLarge);
     flipInterest(!showInterest);
   }
 
@@ -61,13 +59,14 @@ function App() {
 
   function adoptConfirmed(adoptedAnimal: Adopted) {
     let TempAdopted = [];
-
+    console.log("lol")
     for (let index = 0; index < animalsState.length; index++) {
       const singleAnimal = animalsState[index];
       if (singleAnimal.name == adoptedAnimal.animalName) {
         let tempAnimalArray = [...animalsState];
         tempAnimalArray[index].booked = true;
         setAnimal(tempAnimalArray);
+        console.log(singleAnimal, tempAnimalArray)
       }
     }
     TempAdopted = [...adopted, adoptedAnimal];
