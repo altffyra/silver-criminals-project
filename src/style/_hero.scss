@@ -23,7 +23,7 @@
     height: 15.5em;
     position: absolute;
     background-color: rgb(255, 255, 255, .7);
-    border-radius: 22px;
+    border-radius: 20px;
     top: 3em;
     left: 3em;
     padding: 1.5em;
@@ -39,7 +39,7 @@
       align-items: center;
       justify-content: space-evenly;
       padding: 0.5em;
-      font-size: 26px;
+      font-size: 1.5em;
       align-self: flex-end;
       width: 8em;
       height: 2em;
@@ -51,7 +51,7 @@
       }
 
       .heroLogo {
-        border-radius: 1000px;
+        border-radius: 16em;
         width: 1.5em;
       }
     }
