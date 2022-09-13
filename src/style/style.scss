@@ -16,6 +16,12 @@
   margin: 0;
 }
 
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px;
+}
+
 .App {
   height: 100vh;
   width: 99vw;
