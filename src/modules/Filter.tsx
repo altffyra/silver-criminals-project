@@ -3,10 +3,7 @@ import { Animalinterface, FilterInterface } from "../modules/interfaces";
 import { SetStateAction, useState } from "react";
 interface Props {
   info: Animalinterface[];
-  update: any;
-  filter: FilterInterface | any;
-  setFilter: any;
-  cancelFilter: any;
+  update: (e:FormType)=> void;
 }
 
 type FormType = ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>;
@@ -18,10 +15,6 @@ const Filter = (props: Props) => {
     props.update(e);
   }
 
-  const onClear = () => {
-    // selectInputRef.current.select.clearValue();
-    props.cancelFilter
-  };
 
 
   return (
@@ -36,7 +29,7 @@ const Filter = (props: Props) => {
             <input
               placeholder="Ange stad"
               type="text"
-              name="Location"
+              name="location"
               onChange={(e) => changeForm(e)}
             ></input>
           </div>
@@ -47,7 +40,9 @@ const Filter = (props: Props) => {
               <option value="Any">Alla</option>
               <option value="Katt">Katt</option>
               <option value="Hund">Hund</option>
-              <option value="other">Annat</option>
+              <option value="Fågel">Fågel</option>
+              <option value="Gnagare">Gnagare</option>
+              <option value="Fisk">Fisk</option>
             </select>
 
           </div>

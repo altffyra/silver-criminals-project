@@ -25,7 +25,7 @@ function App() {
   //alla djur
   const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
   // temporära djur som läggs i stor info
-  const [tempAnimalState, setTempAnimal] = useState<Animalinterface>(
+  const [tempAnimalState, setTempAnimal] = useState(
     animals[0]
   );
     // adopted( animalID, Namn ,Telefonnummer, E-post )
@@ -41,7 +41,7 @@ function App() {
 
 
 // visar stor info
-  function showOverlay(temp: SetStateAction<Animalinterface>) {
+  function showOverlay(temp:any) {
     setTempAnimal(temp);
     flipBoolean(!showLarge);
   }
@@ -68,7 +68,6 @@ function App() {
         let tempAnimalArray = [...animalsState];
         tempAnimalArray[index].booked = true;
         setAnimal(tempAnimalArray);
-        console.log(animalsState);
       }
     }
     TempAdopted = [...adopted, adoptedAnimal];
@@ -76,33 +75,35 @@ function App() {
     flipInterest(!showInterest);
     showThankYouPage();
   }
-  function cancelFilter() {
-    setFiltered(animals);
-    tempArray = [];
-  }
-  function timeToUpdate(e: any, filterArguments: Animalinterface) {
-    console.log(tempArray);
+
+  function timeToUpdate(e:any) {
+    let filterTemp
     if (e.target.value == "Any") {
       const prop = e.target.name;
-      delete filter[prop];
-      console.log(filter);
+      const tempDelete = {...filter} 
+      delete tempDelete[prop];
+      filterTemp = tempDelete
+      // setFilter(tempDelete)
     } else {
-      setFilter({
+      filterTemp={
         ...filter,
         [e.target.name]: e.target.value,
-      });
+      };
     }
     for (let index = 0; index < animalsState.length; index++) {
       const singleCompareAnimal: Animalinterface = animalsState[index];
-      let test = Object.entries(filter).every(
+      let test = Object.entries(filterTemp).every(
+       // @ts-ignore
         ([key, value]) => singleCompareAnimal[key] === value
       );
       if (test === true) {
         tempArray.push(singleCompareAnimal);
       }
     }
+    setFilter(filterTemp)
     setFiltered(tempArray);
-    console.log(tempArray);
+    console.log(tempArray)
+  
   }
 
   const animalsMap = filteredAnimal.map((animal, index) => {
@@ -110,7 +111,6 @@ function App() {
       <Animals
         showOverlay={showOverlay}
         info={animal}
-        update={timeToUpdate}
         index={index}
         key={index}
       />
@@ -136,12 +136,12 @@ function App() {
   );
 
   const showThank = showThankYou ? (
-    <ThankYou info={adopted} close= {showThankYouPage}/>
+    <ThankYou close= {showThankYouPage}/>
   ) : (
     ""
   );
 
-  const showAction = callToActionBoolean ? (<AdoptionForm showOverlay = {showCallToAction}/>) : "";
+  const showAction = callToActionBoolean ? (<AdoptionForm switchToAdoption = {showCallToAction} showOverlay = {showCallToAction}/>) : "";
 
   return (
     <div className="App">
@@ -150,9 +150,6 @@ function App() {
       <Filter
         info={animalsState}
         update={timeToUpdate}
-        filter={filter}
-        setFilter={setFilter}
-        cancelFilter={cancelFilter}
       />
       <article className="animalGrid">{animalsMap}</article>
       <CallToAction

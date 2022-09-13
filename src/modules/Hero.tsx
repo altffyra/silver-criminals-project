@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
       />
       <div className="heroTextSection">
         <p className="heroText">
-          Sök efter djur som behöver ett nytt hem som passar just dig!
+          Alla djur förtjänar ett eget hem och kärlek. Hitta din nya bästa vän idag!
         </p>
         <button className="hero btn">
           {" "}
