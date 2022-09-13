@@ -21,36 +21,81 @@
   align-content: flex-start;
   padding-left: 20px;
   padding-right: 20px;
-  width: 600px;
+  width: 800px;
   height: 735px;
   background: #ffffff;
   border: 2px solid #f680c7;
   border-radius: 22px;
 }
 
+.adopt__wrapper{
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+}
+.adopt__user{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.adopt__animal{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.adopt__specs{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.adopt__img{
+width: 140px;
+height: 200px;
+background: #FFFFFF;
+border: 1px solid #F680C7;
+border-radius: 22px;
+}
 
+
+
+
+.options{
+min-width: 80px;
+height: 26px;
+background: #FFFFFF;
+border: 1px solid #F680C7;
+border-radius: 22px;
+text-align: left;
+font-family: "Krub", sans-serif;
+font-weight: 400;
+font-size: 16px;
+padding-left: 10px;
+padding-right: 10px;
+margin-left: 10px;
+}
 
 .adopt__form {
   font-family: "Krub", sans-serif;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 42px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
   color: #000000;
   display: flex;
   flex-direction: column;
   margin-top: 35px;
   align-items: stretch;
-  width: 500px;
+  width: 800px;
   height: 210px;
 }
 
 .adopt__input {
   border: none;
   border-bottom: 1px solid black;
-  margin: 20px;
+  margin-left: 10px;
 }
 
-.form__about {
+.adopt__about {
   font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -76,9 +121,9 @@
     font-size: 22px;
   }
 
-.send__btn {
+.adopt__btn {
   margin-top: 30px;
-  width: 300px;
+  width: 140px;
   height: 40px;
   font-style: normal;
   font-weight: 600;
@@ -89,7 +134,7 @@
   @include buttons;
 }
 
-.send__btn__logo {
+.adopt__btn__logo {
   border-radius: 300px;
   width: 30px;
 }
