@@ -49,7 +49,9 @@ const AdoptionForm = (props: Props) => {
               </label>
             </section>
 
+            <section className="divider"></section>
 
+            
             <label>
               Djurets namn:
               <input
@@ -69,9 +71,9 @@ const AdoptionForm = (props: Props) => {
               <img src="" alt="" />
             </section>
 
-            <section className="adopt__animal">
-              <label>
-                kön:
+            <section>
+              <label className="adopt__animal">
+              kön:
                 <select className="options" name="gender">
                   <option value="Any">Alla</option>
                   <option value="Hane">Hane</option>
@@ -79,7 +81,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__animal">
               Storlek:
                 <select className="options" name="size">
                   <option value="alla">Alla</option>
@@ -89,7 +91,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__animal">
               Typ:
                 <select className="options" name="type">
                   <option value="Any">Alla</option>
@@ -99,7 +101,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__animal">
               Ras
                 <select className="options" name="Race">
                   <option value="Any">Alla</option>
@@ -107,7 +109,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__animal">
               Energi:
                 <select className="options" name="Energy">
                 <option value="Any">Alla</option>
@@ -115,7 +117,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__animal">
               Ålder:
                 <select className="options" name="Old">
                 <option value="Any">Alla</option>
@@ -124,8 +126,8 @@ const AdoptionForm = (props: Props) => {
               </label>
             </section>
 
-            <section className="adopt__specs">
-              <label>
+            <section>
+              <label  className="adopt__specs">
               Bra med små barn:
                 <select className="options" name="WellWithSmall">
                   <option value="Any">Ingen Preferens</option>
@@ -133,7 +135,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__specs">
               Bra med stora barn:
                 <select className="options" name="WellWithLarge">
                   <option value="Any">Ingen Preferens</option>
@@ -141,7 +143,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__specs">
               Bra med katter:
                 <select className="options" name="WellWithCats">
                   <option value="Any">Ingen Preferens</option>
@@ -149,7 +151,7 @@ const AdoptionForm = (props: Props) => {
                 </select>
               </label>
 
-              <label>
+              <label className="adopt__specs">
               Bra med hundar:
                 <select className="options" name="WellWithDogs">
                   <option value="Any">Ingen Preferens</option>
