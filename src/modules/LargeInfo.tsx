@@ -19,7 +19,7 @@ if (!props.info.hasOwnProperty('WellWithSmall') &&  !props.info.hasOwnProperty('
 nothing = "Ingen"
 
   return (
-    <div onClick={props.showOverlay} className="blurr-div">
+    <div className="blurr-div">
       <div className="info__card">
         <div className="img__close">
           <button onClick={props.showOverlay} className="close">
