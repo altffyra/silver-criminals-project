@@ -161,3 +161,9 @@
   border-radius: 300px;
   width: 30px;
 }
+
+@media only screen and (max-width: 770px) {
+  .adopt__card {
+    width: 700px;
+  }
+}
