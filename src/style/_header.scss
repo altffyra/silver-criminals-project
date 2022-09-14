@@ -1,4 +1,13 @@
 .header {
   display: flex;
   justify-content: center;
+
+  .logo {
+    max-width: 6em;
+    max-height: 6em;
+  }
+  .logo-text {
+    max-width: 25em;
+
+  }
 }
