@@ -49,7 +49,7 @@
 .optn {
   display: flex;
   flex-direction: column;
-  font-weight: 900;
+  cursor: pointer;
   font-size: 1.5em;
   margin-top: 1em;
 }
@@ -60,13 +60,13 @@
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-weight: 900;
   font-size: 1.5em;
   margin-top: 1em;
   width: 8em;
 }
 
 .social__img {
+  cursor: pointer;
   width: 2em;
   height: 2em;
   margin: 0.2em;
@@ -75,10 +75,29 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  height: 9em;
-  font-weight: 800;
+  height: 4em;
   font-size: 0.8em;
   color: #000000;
   font-family: "Krub", sans-serif;
 }
 
+@media only screen and (max-width: 730px) {
+  .footer__flex {
+    .logo {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .optn {
+      flex-direction: column;
+      font-size: 1.2em;
+      text-align: left;
+    }
+  
+    .social {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+}
