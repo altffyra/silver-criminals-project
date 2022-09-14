@@ -13,7 +13,9 @@
       "age": "3",
       "booked": true,
       "picture": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*",
-      "WellWith": ["Små barn, ", "stora barn, ", "katter "],
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithCats": "Katter",
       "desc": "Loremtext"
     },
 
@@ -30,7 +32,6 @@
       "age": "1",
       "booked": false,
       "picture": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_from_Gatil_Ragbelas.jpg",
-      "WellWith": [" "],
       "desc": "Loremtext"
     },
 
@@ -47,8 +48,10 @@
       "age": "10",
       "booked": false,
       "picture": "http://www.kattras.nu/wp-content/uploads/2017/10/helig-birma2.jpg",
-      "WellWith": ["Små barn, ", "stora barn "],
-      "desc": "Loremtext"
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "desc": "Trött gammal kattfarbror som förlorat sin ägare. Söker nytt, kärleksfullt hem utan barn."
+
     },
 
     {
@@ -64,13 +67,13 @@
       "age": "10",
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1520366498724-709889c0c685?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "WellWith": ["Stora barn "],
-      "desc": "Loremtext"
+      "WellWithLarge": "Stora barn",
+      "desc": "Jelly räddades från en galen unge som tänkte spola ner henne i toaletten. Hon söker ett kärleksfullt hem där hon får vara den spralliga fisk hon är!"
     },
 
     {
       "animalId": "5",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-03-24",
       "name": "Coco ",
       "gender": "Hona",
       "type": "Hund",
@@ -81,14 +84,15 @@
       "age": "3",
       "booked": true,
       "picture": "https://images.unsplash.com/photo-1611611158876-41699b77a059?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
-      "WellWith": ["Stora barn, ", "hundar "],
-      "desc": "Loremtext"
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+       "desc": "Coco är en egensinnig liten dam som söker ett hem utan små barn. I hennes förra hem bet hon ihjäl katten, så inga katter heller."
     },
 
     {
       "animalId": "6",
       "incomeDate": "2022-06-30",
-      "name": "Lord of Destruction",
+      "name": "Lordi",
       "gender": "Hane",
       "type": "Katt",
       "race": "Brittisk korthår",
@@ -98,13 +102,14 @@
       "age": "2",
       "booked": true,
       "picture": "https://www.katterian.se/wp-content/uploads/2013/09/brittisk-korth%C3%A5r.jpg",
-      "WellWith": ["Små barn, ", "stora barn "],
-      "desc": "Loremtext"
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "desc": "Lordi a.k.a Lord of Destruction är ett energiknippe av rang. Kan inte lämnas obevakad för en minut, då hittar han på nåt skit."
     },
 
     {
       "animalId": "7",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-08-10",
       "name": "Jeff",
       "gender": "Hane",
       "type": "Katt",
@@ -115,13 +120,15 @@
       "age": "0",
       "booked": false,
       "picture": "https://www.kattras.nu/wp-content/uploads/2017/10/bengal-kattunge.jpg",
-      "WellWith": ["Små barn, ", "stora barn, ", "hundar "],
-      "desc": "Loremtext"
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "desc": "TITT PÅ'N! Vem kan säga nej till Jeff? Skynda haffa innan någon annan hinner före!"
     },
 
     {
       "animalId": "8",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-08-14",
       "name": "Loco ",
       "gender": "Hane",
       "type": "Fågel",
@@ -131,14 +138,15 @@
       "energy": "1",
       "age": "15",
       "booked": false,
-      "picture": "https://images.unsplash.com/photo-1612024782955-49fae79e42bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "WellWith": ["Stora barn, ", "hundar "],
-      "desc": "Loremtext"
+      "picture": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "desc": "Trollkarlen dumpade Loco efter en misslyckad show. Behöver ett lugnt hem utan små barn och trollkarlar."
     },
 
     {
       "animalId": "9",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-07-30",
       "name": "Bubba",
       "gender": "Hane",
       "type": "Hund",
@@ -149,13 +157,15 @@
       "age": "5",
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1568033951564-914f351989a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-      "WellWith": ["Små barn, ", "stora barn, ", "hundar "],
-      "desc": "Loremtext"
+      "WellWithSmall": "Små barn",
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "desc": "Bubba är en ståtlg herre som älskar äventyr! Söker ett aktivt hem där han får vara med på ALLT."
     },
 
     {
       "animalId": "10",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-07-25",
       "name": "Minx",
       "gender": "Hona",
       "type": "Gnagare",
@@ -166,25 +176,185 @@
       "age": "1",
       "booked": true,
       "picture": "https://images.unsplash.com/photo-1584553421349-3557471bed79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1146&q=80",
-      "WellWith": ["Stora barn "],
-      "desc": "Loremtext"
+      "WellWithLarge": "Stora barn",
+      "desc": "Lilla Minx letar efter sitt föralltidhem efter att ha blivit omplacerad 5 gånger. Hon har väldigt mycket energi och behöver aktiveras 10h/dag."
     },
 
     {
       "animalId": "11",
-      "incomeDate": "2022-06-30",
+      "incomeDate": "2022-09-03",
       "name": "Flash",
       "gender": "Hane",
       "type": "Hund",
       "race": "German Shepherd",
       "size": "Stor",
       "location": "Stockholm",
-      "energy": "8",
+      "energy": "10",
       "age": "6",
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1621951714307-0f9b8070a9b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
-      "WellWith": ["Stora barn, ", "hundar "],
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "desc": "Här kommer FLASH! Ett riktigt energiknippe som kräver mycket motion och aktivitet. Söker ett hem där han får utlopp för all energi."
+    },
+    {
+      "animalId": "12",
+      "incomeDate": "2022-09-01",
+      "name": "Lorem",
+      "gender": "Hona",
+      "type": "Fågel",
+      "race": "Undulat",
+      "size": "Liten",
+      "location": "Göteborg",
+      "energy": "4",
+      "age": "2",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1540979129101-fef4ab23dbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+      "WellWithLarge": "Stora barn",
+      "desc": "Lorem är en liten rackare som älskar att kvittra o flyga runt. Hon vill komma till ett hem där hon får flyga fritt."
+    },
+    {
+      "animalId": "13",
+      "incomeDate": "2022-08-26",
+      "name": "Yomama",
+      "gender": "Hane",
+      "type": "Gnagare",
+      "race": "Kanin",
+      "size": "Mellan",
+      "location": "Säffle",
+      "energy": "8",
+      "age": "4",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "desc": "Yomama hittades övergiven vid ett sommarstugeområde. Blyg för nya människor, men när ni lär känna varandra kommer han aldrig lämna din sida!"
+    },
+    {
+      "animalId": "14",
+      "incomeDate": "2022-09-13",
+      "name": "Missan",
+      "gender": "Hona",
+      "type": "Katt",
+      "race": "Blandras",
+      "size": "Stor",
+      "location": "Malmö",
+      "energy": "1",
+      "age": "9",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "WellWithCats": "Katter",
+      "desc": "Missan är en äldre dam som gillar att chilla. Skulle trivas bra hos en pensionär som söker sällskap."
+    },
+    {
+      "animalId": "15",
+      "incomeDate": "2022-08-30",
+      "name": "Stig",
+      "gender": "Hane",
+      "type": "Katt",
+      "race": "Bondkatt",
+      "size": "Mellan",
+      "location": "Ludvika",
+      "energy": "5",
+      "age": "6",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "WellWithLarge": "Stora barn",
+      "WellWithSmall": "Små barn",
+      "WellWithDogs": "Hundar",
+      "desc": "Stig är en ståtlig herre som uppskattar att bli kliad på magen och busa."
+    },
+    {
+      "animalId": "16",
+      "incomeDate": "2022-06-30",
+      "name": "Juan",
+      "gender": "Hane",
+      "type": "Hund",
+      "race": "Mops",
+      "size": "Liten",
+      "location": "Karlstad",
+      "energy": "5",
+      "age": "5",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80",
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithCats": "Katter",
+      "WellWithDogs": "Hundar",
+      "desc": "Juan älskar allt och alla! Han kommer från ett spansktalande hem och det nya hemmet får ha tålamod med språket, då han inte förstår svenska så bra."
+    },
+    {
+      "animalId": "17",
+      "incomeDate": "2022-06-30",
+      "name": "Maggan",
+      "gender": "Hona",
+      "type": "Hund",
+      "race": "Pudel",
+      "size": "Stor",
+      "location": "Stockholm",
+      "energy": "4",
+      "age": "8",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1614261812340-5ee9a3ed33a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "desc": "Maggan vill vara center of attention och hatar katter."
+    },
+    {
+      "animalId": "18",
+      "incomeDate": "2022-06-30",
+      "name": "Nemo",
+      "gender": "Hane",
+      "type": "Fisk",
+      "race": "Clownfisk",
+      "size": "Liten",
+      "location": "Stockholm",
+      "energy": "9",
+      "age": "3",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithDogs": "Hundar",
+      "desc": "Loremtext"
+    },
+    {
+      "animalId": "19",
+      "incomeDate": "2022-06-30",
+      "name": "Janne",
+      "gender": "Hane",
+      "type": "Hund",
+      "race": "Kinesisk nakenhund",
+      "size": "Liten",
+      "location": "Stockholm",
+      "energy": "3",
+      "age": "12",
+      "booked": false,
+      "picture": "https://images.unsplash.com/photo-1654535871837-d148105d4619?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "WellWithLarge": "Stora barn",
+      "desc": "Loremtext"
+    },
+    {
+      "animalId": "20",
+      "incomeDate": "2022-06-30",
+      "name": "Rut",
+      "gender": "Hona",
+      "type": "Katt",
+      "race": "Maine Coon",
+      "size": "Stor",
+      "location": "Stockholm",
+      "energy": "8",
+      "age": "6",
+      "booked": true,
+      "picture": "https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+      "WellWithSmall": "Små barn" ,
+      "WellWithLarge": "Stora barn",
+      "WellWithCats": "Katter",
       "desc": "Loremtext"
     }
+    
   ]
 }

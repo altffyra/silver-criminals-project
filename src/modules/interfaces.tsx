@@ -10,9 +10,12 @@ export interface Animalinterface {
   age: string;
   booked: boolean;
   picture: string;
-  WellWith: string[];
   gender: string;
   desc: string;
+  WellWithSmall?: string ;
+  WellWithLarge?: string;
+  WellWithCats?: string;
+  WellWithDogs?: string;
 }
 
 export interface Adopted {
@@ -37,4 +40,9 @@ export interface FilterInterface {
   WellWith?: string[];
   gender?: string;
   desc?: string;
+  WellWithSmall?: string ;
+  WellWithLarge?: string;
+  WellWithCats?: string;
+  WellWithDogs?: string;
+  
 }

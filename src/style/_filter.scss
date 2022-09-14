@@ -2,24 +2,49 @@
   display: flex;
   flex-direction: column;
   font-family: Krona One;
-  width: 90%;
-  padding: 30px;
+  width: 100%;
+  padding: 1em;
 }
 
-.filterWrapper {
+.filterSection {
   background-color: #f680c7;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: Krona One;
-  margin: 4rem;
-  border-radius: 22px;
-  padding: 22px;
+  padding: 2em 0 2em 0;
+  margin: 1em 0 1em 0;
+  border-radius: 20px;
+  gap: 1em;
+  line-height: 2em;
+
+
+  & *> div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: white;
+
+  }
+
+  & * > select {
+    border: none;
+    border-radius: 100px;
+    width: 13em;
+    font-family: Krona One;
+    font-size: 12px;
+    height: 2em;
+    text-align: center;
+
+  }
 
   input {
-    height: 30px;
+    width: 13em;
+    border: none;
+    height: 2em;
     border-radius: 7px;
-    font-size: 16px;
+    font-size: 12px;
     font-family: Krona One;
+    text-align: center;
   }
 }
 
@@ -27,4 +52,5 @@
   display: flex;
   flex-direction: column;
 }
+
 

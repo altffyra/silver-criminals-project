@@ -9,64 +9,96 @@ import { animals } from "./context.json";
 import { Animalinterface, Adopted } from "./modules/interfaces";
 import LargeInfo from "./modules/LargeInfo";
 import Form from "./modules/Form";
+import AdoptionForm from "./modules/AdoptionForm";
 import { FilterInterface } from "./modules/interfaces";
+import ThankYou from "./modules/ThankYou";
 
 function App() {
+  //stor info flip
   const [showLarge, flipBoolean] = useState(false);
+  //vidare efter stor info
   const [showInterest, flipInterest] = useState(false);
-  const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
-  const [tempAnimalState, setTempAnimal] = useState<Animalinterface>(
-    animals[0]
-  );
-  const [adopted, setAdopted] = useState<Adopted[]>();
-  const [filter, setFilter] = useState<FilterInterface | any>({});
-  const [filteredAnimal, setFiltered] = useState<Animalinterface[]>(animals);
-  let tempArray: [] = [];
-  // adopted( animalID, Namn ,Telefonnummer, E-post )
+  const [showThankYou, flipThankYou]= useState(false)
 
-  function showOverlay(temp: SetStateAction<Animalinterface>) {
+  // CTA blocket
+  const [callToActionBoolean, callToActionShow] = useState(false);
+  //alla djur
+  const [animalsState, setAnimal] = useState<Animalinterface[]>(animals);
+  // temporära djur som läggs i stor info
+  const [tempAnimalState, setTempAnimal] = useState(animals[0]);
+    // adopted( animalID, Namn ,Telefonnummer, E-post )
+  const [adopted, setAdopted] = useState<Adopted[]>([]);
+   // filter state för filterfunktion
+  const [filter, setFilter] = useState<FilterInterface | any>({});
+  // utfiltrerade Djur som mappas ut i fyrkanterna
+  const [filteredAnimal, setFiltered] = useState<Animalinterface[]>(animals);
+  // temporär array som används vid filter
+
+
+  let tempArray: Animalinterface[] = [];
+
+
+// visar stor info
+  function showOverlay(temp:any) {
     setTempAnimal(temp);
     flipBoolean(!showLarge);
   }
-
+// tar bort stor info och visar boknings sidan
   function switchToForm() {
-    flipBoolean(!showLarge);
+    // flipBoolean(!showLarge);
     flipInterest(!showInterest);
   }
 
-  function adoptConfirmed(adoptedAnimal: SetStateAction<Adopted>) {
-    // let Temparray = [...adopted, adoptedAnimal]
-    // setAdopted(Temparray)
-    flipBoolean(!showInterest);
-  }
-  function cancelFilter() {
-    filteredAnimal(animals);
-    tempArray = [];
+  function showCallToAction(){
+    callToActionShow(!callToActionBoolean)
   }
 
-  function timeToUpdate(e: any, filterArguments: Animalinterface) {
-    if (e.target.value == "Any") {
+  function showThankYouPage(){
+    flipThankYou(!showThankYou);
+  }
+
+  function adoptConfirmed(adoptedAnimal: Adopted) {
+    let TempAdopted = [];
+    for (let index = 0; index < animalsState.length; index++) {
+      const singleAnimal = animalsState[index];
+      if (singleAnimal.name == adoptedAnimal.animalName) {
+        let tempAnimalArray = [...animalsState];
+        tempAnimalArray[index].booked = true;
+        setAnimal(tempAnimalArray);
+      }
+    }
+    TempAdopted = [...adopted, adoptedAnimal];
+    setAdopted(TempAdopted);
+    flipInterest(!showInterest);
+    showThankYouPage();
+  }
+
+  function timeToUpdate(e:any) {
+    let filterTemp
+    if (e.target.value == "Any" || e.target.value == "" ) {
       const prop = e.target.name;
-      delete filter[prop];
-      console.log(filter);
+      const tempDelete = {...filter} 
+      delete tempDelete[prop];
+      filterTemp = tempDelete
+      // setFilter(tempDelete)
     } else {
-      setFilter({
+      filterTemp={
         ...filter,
         [e.target.name]: e.target.value,
-      });
+      };
     }
-
     for (let index = 0; index < animalsState.length; index++) {
       const singleCompareAnimal: Animalinterface = animalsState[index];
-      let test = Object.entries(filter).every(
+      let test = Object.entries(filterTemp).every(
+       // @ts-ignore
         ([key, value]) => singleCompareAnimal[key] === value
       );
       if (test === true) {
         tempArray.push(singleCompareAnimal);
       }
     }
+    setFilter(filterTemp)
     setFiltered(tempArray);
-    console.log(tempArray);
   }
 
   const animalsMap = filteredAnimal.map((animal, index) => {
@@ -74,7 +106,6 @@ function App() {
       <Animals
         showOverlay={showOverlay}
         info={animal}
-        update={timeToUpdate}
         index={index}
         key={index}
       />
@@ -99,6 +130,14 @@ function App() {
     ""
   );
 
+  const showThank = showThankYou ? (
+    <ThankYou close= {showThankYouPage}/>
+  ) : (
+    ""
+  );
+
+  const showAction = callToActionBoolean ? (<AdoptionForm switchToAdoption = {showCallToAction} showOverlay = {showCallToAction}/>) : "";
+
   return (
     <div className="App">
       <Header />
@@ -106,15 +145,16 @@ function App() {
       <Filter
         info={animalsState}
         update={timeToUpdate}
-        filter={filter}
-        setFilter={setFilter}
-        cancelFilter={cancelFilter}
       />
       <article className="animalGrid">{animalsMap}</article>
-      <CallToAction />
+      <CallToAction
+      showCallToAction = {showCallToAction}
+      />
       <Footer />
       {showLargeItem}
       {showInterestPage}
+      {showAction}
+      {showThank}
     </div>
   );
 }

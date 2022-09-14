@@ -11,3 +11,12 @@
   -webkit-box-shadow: -6px 8px 10px 0px rgba(201, 120, 172, 0.75);
   -moz-box-shadow: -6px 8px 10px 0px rgba(201, 120, 172, 0.75);
 }
+
+@mixin closeButton {
+  position: relative;
+  top: 44px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 36px;
+}

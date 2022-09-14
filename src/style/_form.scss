@@ -19,55 +19,59 @@
   align-items: center;
   justify-content: space-around;
   align-content: flex-start;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 600px;
-  height: 735px;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 36em;
+  height: 42em;
   background: #ffffff;
   border: 2px solid #f680c7;
-  border-radius: 22px;
+  border-radius: 20px;
 }
 
 .form__name {
   font-family: "Krub", sans-serif;
   text-align: center;
   font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 60px;
-  padding-top: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 2em;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .form {
   font-family: "Krub", sans-serif;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 42px;
+  font-weight: 400;
+  font-size: 1.5em;
   color: #000000;
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: 2em;
   align-items: stretch;
-  width: 500px;
-  height: 210px;
+  width: 30em;
+  height: 10em;
+
+  & *> label {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form__input {
+  font-size: 0.7em;
   border: none;
   border-bottom: 1px solid black;
-  margin: 20px;
+  margin: 1em;
 }
 
 .info__card__about {
   font-family: "Krub", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.775em;
   color: #000000;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .form__close {
@@ -76,30 +80,22 @@
   flex-direction: column;
 }
 .close {
-  position: relative;
-  top: 44px;
-  right: 10px;
-  width: 34px;
-  height: 34px;
-  border: none;
-  border-radius: 50%;
-  font-size: 22px;
+  @include closeButton;
 }
 
 .send__btn {
-  margin-top: 30px;
-  width: 300px;
-  height: 40px;
+  margin-top: 1.5em;
+  width: 15em;
+  height: 3em;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1em;
   text-align: center;
   font-family: "Krub", sans-serif;
   @include buttons;
 }
 
 .send__btn__logo {
-  border-radius: 300px;
+  border-radius: 16em;
   width: 30px;
 }
