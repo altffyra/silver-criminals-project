@@ -164,6 +164,23 @@
 
 @media only screen and (max-width: 770px) {
   .adopt__card {
-    width: 700px;
+    width: 38em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    height: 46em;
+    background: #ffffff;
+    border: 2px solid #f680c7;
+    border-radius: 20px;
   }
+
+  .options {
+    min-width: 3em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+.divider {
+  margin: 1em;
+}
 }
