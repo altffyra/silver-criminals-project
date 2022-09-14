@@ -42,17 +42,17 @@ nothing = "Ingen"
 
           <div className="largeAnimalSpecs">
             <section className="largeSection__one">
-              <p>Typ: {props.info.type}.</p>
-              <p>Ras: {props.info.race}.</p>
-              <p>Kön: {props.info.gender}.</p>
-              <p>Storlek: {props.info.size}.</p>
+              <p><span className="dot"></span> Typ: {props.info.type}.</p>
+              <p><span className="dot"></span> Ras: {props.info.race}.</p>
+              <p><span className="dot"></span> Kön: {props.info.gender}.</p>
+              <p><span className="dot"></span> Storlek: {props.info.size}.</p>
             </section>
 
             <section className="largeSection__two">
-              <p>Ålder: {props.info.age} år.</p>
-              <p>Finns i: {props.info.location}.</p>
-              <p>Funkar med: {props.info.WellWithSmall} {props.info.WellWithLarge} {props.info.WellWithCats} {props.info.WellWithDogs} {nothing}.</p>
-              <p>Aktivitetsnivå: {props.info.energy} av 10.</p>
+              <p><span className="dot"></span> Ålder: {props.info.age} år.</p>
+              <p><span className="dot"></span> Finns i: {props.info.location}.</p>
+              <p><span className="dot"></span> Funkar med: {props.info.WellWithSmall} {props.info.WellWithLarge} {props.info.WellWithCats} {props.info.WellWithDogs} {nothing}.</p>
+              <p><span className="dot"></span> Aktivitetsnivå: {props.info.energy} av 10.</p>
             </section>
           </div>
 

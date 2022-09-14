@@ -93,3 +93,11 @@
   background-color: rgba($color: #b5b5b5, $alpha: 0.5);
 
 }
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
