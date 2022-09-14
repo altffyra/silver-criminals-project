@@ -16,7 +16,7 @@
       "WellWithSmall": "Små barn" ,
       "WellWithLarge": "Stora barn",
       "WellWithCats": "Katter",
-      "desc": "Loremtext"
+      "desc": "Jens är coolaste katten i stan, lugn som en filbunke och listig som en räv. Har ibland snacks i form av ormbunkar och små möss."
     },
 
     {
@@ -32,7 +32,7 @@
       "age": "1",
       "booked": false,
       "picture": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_from_Gatil_Ragbelas.jpg",
-      "desc": "Loremtext"
+      "desc": "Ove är kelig, sällskapssam och är snabb att inta en plats i hemmet som sin egen"
     },
 
     {
@@ -319,7 +319,7 @@
       "WellWithSmall": "Små barn" ,
       "WellWithLarge": "Stora barn",
       "WellWithDogs": "Hundar",
-      "desc": "Loremtext"
+      "desc": "Nemo glömmer oftast vart han är och ibland hittar han hem"
     },
     {
       "animalId": "19",
@@ -335,7 +335,7 @@
       "booked": false,
       "picture": "https://images.unsplash.com/photo-1654535871837-d148105d4619?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "WellWithLarge": "Stora barn",
-      "desc": "Loremtext"
+      "desc": "Sällskapssam hund som nyser när han inte gillar saker"
     },
     {
       "animalId": "20",
@@ -353,7 +353,7 @@
       "WellWithSmall": "Små barn" ,
       "WellWithLarge": "Stora barn",
       "WellWithCats": "Katter",
-      "desc": "Loremtext"
+      "desc": "Hel-aggressiv dam som river på möbler"
     }
     
   ]
