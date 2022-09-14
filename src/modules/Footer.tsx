@@ -18,7 +18,8 @@ const Footer = (props: Props) => {
         </div>
 
         <div className="optn">
-          <span className="optn__item">Vilka är vi?</span>
+          <span className="optn__item">Om oss</span>
+          <span className="optn__item">Kontakta oss</span>
           <span className="optn__item">Vanliga frågor</span>
         </div>
 
