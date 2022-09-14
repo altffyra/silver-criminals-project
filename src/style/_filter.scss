@@ -22,29 +22,9 @@
     font-family: Krona One;
   }
 }
-.filter-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0.5em;
-  font-size: 26px;
-  align-self: flex-end;
-  max-width: 8em;
-  max-height: 5em;
-  @include buttons;
-}
+
 .searchForms {
   display: flex;
   flex-direction: column;
 }
-.filter-button-cancel {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0.5em;
-  font-size: 26px;
-  align-self: flex-end;
-  max-width: 8em;
-  max-height: 5em;
-  @include buttons(red);
-}
+
