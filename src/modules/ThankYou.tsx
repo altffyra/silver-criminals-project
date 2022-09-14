@@ -12,7 +12,7 @@ const ThankYou = (props: Props) => {
         <div className='small_thanks'>
             <p>
               Tack för din anmälan! <br />
-              Djuret är nu reserverad tillsvidare.
+              Djuret är nu reserverat tillsvidare. <br />
               Vi återkommer till dig inom 5 arbetsdagar.
             </p>
             <div className='separator'></div>
