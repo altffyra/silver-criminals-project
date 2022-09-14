@@ -62,3 +62,14 @@
   border-radius: 16em;
   width: 2em;
 }
+
+@media only screen and (max-width: 730px) {
+  .action__text {
+    font-size: 2.3em;
+  }
+
+  .action__formula {
+    font-size: 1.5em;
+
+  }
+}

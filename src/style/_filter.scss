@@ -48,9 +48,18 @@
   }
 }
 
-.searchForms {
-  display: flex;
-  flex-direction: column;
+@media only screen and (max-width: 730px) {
+  .filterSection {
+    flex-direction: column;
+    padding: 2em;
+  }
 }
+@media only screen and (max-width: 498px) {
+  .filterSection {
+    font-size: 12px;
 
-
+    & * > select {
+      height: 1.5em;
+    }
+  }
+}
