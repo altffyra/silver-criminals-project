@@ -70,36 +70,36 @@ const Filter = (props: Props) => {
 
         <aside className="right-form">
           <div>
-            <p>Bra med små barn:</p>
+            <p>Bra med små barn?</p>
             <div className="separator"></div>
             <select name="WellWithSmall" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
-              <option value="Små barn">Bra</option>
+              <option value="Små barn">Ja</option>
             </select>
           </div>
           <div>
-            <p>Bra med stora barn:</p>
+            <p>Bra med stora barn?</p>
             <div className="separator"></div>
             <select name="WellWithLarge" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
-              <option value="Stora barn">Bra</option>
+              <option value="Stora barn">Ja</option>
             </select>
           </div>
           <div>
-            <p>Bra med katter:</p>
+            <p>Bra med katter?</p>
             <div className="separator"></div>
             <select name="WellWithCats" onChange={(e) => changeForm(e)}>
               <option value="Any">Ingen Preferens</option>
-              <option value="Katter">Bra</option>
+              <option value="Katter">Ja</option>
             </select>
           </div>
           <div>
-            <p>Bra med hundar:</p>
+            <p>Bra med hundar?</p>
             <div className="separator"></div>
             <select name="WellWithDogs" onChange={(e) => changeForm(e)}>
 
               <option value="Any">Ingen Preferens</option>
-              <option value="Hundar">Bra</option>
+              <option value="Hundar">Ja</option>
             </select>
           </div>
 
