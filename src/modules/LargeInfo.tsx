@@ -3,8 +3,8 @@ import { Animalinterface } from "../modules/interfaces";
 
 type Props = {
   info: Animalinterface;
-  showOverlay: any;
-  switchToForm: any;
+  showOverlay: ({}) => void
+  switchToForm: ()=> void;
 };
 
 

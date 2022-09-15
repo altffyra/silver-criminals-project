@@ -3,8 +3,8 @@ import { Animalinterface, Adopted } from "./interfaces";
 
 type Props = {
   info: Animalinterface;
-  switchToForm: any;
-  adoptConfirmed: any;
+  switchToForm: ()=> void;
+  adoptConfirmed:any;
 };
 
 

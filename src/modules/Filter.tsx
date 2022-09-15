@@ -1,6 +1,6 @@
-import React, { ChangeEvent, FormEvent, useRef } from "react";
-import { Animalinterface, FilterInterface } from "../modules/interfaces";
-import { SetStateAction, useState } from "react";
+import React, { ChangeEvent} from "react";
+import { Animalinterface } from "../modules/interfaces";
+
 interface Props {
   info: Animalinterface[];
   update: (e:FormType)=> void;
@@ -8,8 +8,6 @@ interface Props {
 
 type FormType = ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement>;
 
-// type FilterGenderType = "gender" | "race"
-// const selectInputRef = useRef();
 const Filter = (props: Props) => {
   function changeForm(e: FormType) {
     props.update(e);

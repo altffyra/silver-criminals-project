@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  showCallToAction:any
+  showCallToAction:()=> void
 
 };
 
