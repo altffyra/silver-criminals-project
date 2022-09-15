@@ -48,8 +48,7 @@
       "age": "10",
       "booked": false,
       "picture": "http://www.kattras.nu/wp-content/uploads/2017/10/helig-birma2.jpg",
-      "WellWithSmall": "Små barn" ,
-      "WellWithLarge": "Stora barn",
+      "WellWithCats": "Katter",
       "desc": "Trött gammal kattfarbror som förlorat sin ägare. Söker nytt, kärleksfullt hem utan barn."
 
     },
@@ -100,7 +99,7 @@
       "location": "Jokkasjärvi",
       "energy": "9",
       "age": "2",
-      "booked": true,
+      "booked": false,
       "picture": "https://www.katterian.se/wp-content/uploads/2013/09/brittisk-korth%C3%A5r.jpg",
       "WellWithSmall": "Små barn" ,
       "WellWithLarge": "Stora barn",
@@ -174,7 +173,7 @@
       "location": "Karlstad",
       "energy": "10",
       "age": "1",
-      "booked": true,
+      "booked": false,
       "picture": "https://images.unsplash.com/photo-1584553421349-3557471bed79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1146&q=80",
       "WellWithLarge": "Stora barn",
       "desc": "Lilla Minx letar efter sitt föralltidhem efter att ha blivit omplacerad 5 gånger. Hon har väldigt mycket energi och behöver aktiveras 10h/dag."
